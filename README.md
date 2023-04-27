@@ -1,4 +1,5 @@
-#  Portfolio Page 
+#  RICHARD Portfolio Page 
+
 # 📗 Table of Contents
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -27,7 +28,7 @@
 **Portfolio Webpage** is a professional portfolio webpage that highlights my professionals achievements, progresssion, skills and achievements. This is critical to help me grow their career and have access to opportuntiies by easily sharing this webpage with technical recruiters, organizations, friends and business partners. 
 
 ## 🛠 Built With <a name="HTML and CSS "></a>
-
+ 
 ### Tech Stack <a name="Tech-stack"></a>
 
 <details>
@@ -69,10 +70,9 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 - The porfolio webpage project displays the professional webpage to showcase;
-  - Professional accomplishments
-  - Tech Skills and Expertise
-  - Information about the professional 
-
+  - Richard's Professional accomplishments
+  - His Tech Skills and Expertise
+  - Contact  information about Richard
 
 ### Set ups <a name ="setup"> </a>
 To get a local copy up and running, follow these steps.
@@ -90,7 +90,7 @@ To get a local copy up and running, follow these steps.
 - Install [Git](www.github.com)
 - [linters for HTML/CSS](https://github.com/microverseinc/linters-config/tree/master/html-css)
 - A compatible browser. We recommend Chrome, Safari, Edge and Firefox >5.0 and above
-- useful images 
+- useful images for the portfolio
 
 ### Install: <a name="install"></a>
 Install this project using:
@@ -118,7 +118,6 @@ You can deploy this project by:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Ejike Richard**
-
 - GitHub: [@rychrr](https://github.com/rychrr)
 - Twitter: [@rychrrd](https://twitter.com/rychardase)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ejikeozonkwo)
@@ -127,17 +126,15 @@ You can deploy this project by:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
-
-- **Interactions:** Improving interactions with Javascript
-- **Page Designs:** More intuitive Designs and themes for Users
-- **Auto Response:** Auto response to interactions for livechat, direct messaging
-
+- [x] Html pageframework
+- [x] CSS styling using  mobile first
+- [ ] **Interactions:** Improving interactions with Javascript
+- [ ] **Page Designs:** More intuitive Designs and themes for Users
+- [ ] **Auto Response:** Auto response to interactions for livechat, direct messaging
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -158,12 +155,10 @@ If you like this project , please show your support by;
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank :
 - [Bobson](https://github.com/KALUNGI-J-BOBSON)
-- [Clinton](https://github.com/clin2on3mun) 
 
 for their support and guidiance during the project building.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
