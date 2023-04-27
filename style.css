@@ -4,25 +4,41 @@
 
 * {
   box-sizing: border-box;
+ }
+
+.flex_row {
+    display: flex;
+
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.top_header.flex_row  {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline.flex_column{
+    align-items: flex-start;    
 }
 
 .top_header {
+  color: #fff;
   background: #3c3a39;
   width: 375px;
+  height:92px;
+  padding-left: 24px;
+  padding-right: 24px;
+  left: 0px;
+  top: 0px;
+
 }
 
-.top_nav {
-  color: #fff;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.top_nav a {
+.top_header a {
   color: #fff;
   text-decoration: none;
   line-height: 24px;
@@ -37,18 +53,15 @@
 }
 
 .main_container {
-  display: flex;
-  flex-direction: column;
-  background: #1c1a19;
-  align-items: flex-start;
-  background-image: url('./img/index_background.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  width: 375px;
-  padding: 20px;
-  padding-top: 80px;
-  padding-bottom: 140px;
+    width: 375px;
+    height:590px;
+    background: #1c1a19;
+    padding: 120px 24px 120px 24px;
+    background-image: url('./img/index_background.png');
+    background-repeat: no-repeat;
+    background-position: right 120%;
 }
+
 
 .intro_1 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
@@ -58,7 +71,9 @@
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  padding-bottom: 0;
+  margin: 0;
+  height: 124px;
+  width: 327px;
   margin-bottom: 0;
 }
 
@@ -69,8 +84,13 @@
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
-  padding-bottom: 0;
+  width: 327px;
+  left: 24px;
+  top: 256px;
+  padding: 0px;
   margin-bottom: 0;
+  margin-top: 0px;
+  padding-top: 10px;
 }
 
 .intro_3 {
@@ -79,21 +99,30 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color:#FFFFFF;
+  height: 123px;
+  width: 327px;
+  left: 24px;
+  top: 295px;
 }
 
 .social_media_list {
   display: flex;
   list-style: none;
   justify-content: flex-start;
-  padding-left: 0;
-  padding-top: 0;
   margin-top: 0;
+  padding: 0;
   align-items: baseline;
+  margin-bottom: 20px;
+  
 }
 
 .socials {
-  margin-right: 20px;
+  left: 24px;
+  padding-left: 20px;
   min-height: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
+
+
+
