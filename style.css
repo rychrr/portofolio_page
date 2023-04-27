@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/Roboto');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.flex_row {
+  display: flex;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_header.flex_row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline.flex_column {
+  align-items: flex-start;
+}
+
+.top_header {
+  color: #fff;
+  background: #3c3a39;
+  width: 375px;
+  height: 92px;
+  padding-left: 24px;
+  padding-right: 24px;
+  left: 0;
+  top: 0;
+}
+
+.top_header a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.top_nav h3 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main_container {
+  width: 375px;
+  height: 590px;
+  background: #1c1a19;
+  padding: 120px 24px 120px 24px;
+  background-image: url('./img/index_background.png');
+  background-repeat: no-repeat;
+  background-position: right 120%;
+}
+
+.intro_1 {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 0;
+  height: 124px;
+  width: 327px;
+  margin-bottom: 0;
+}
+
+.intro_2 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  width: 327px;
+  left: 24px;
+  top: 256px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+.intro_3 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  height: 123px;
+  width: 327px;
+  left: 24px;
+  top: 295px;
+}
+
+.social_media_list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding: 0;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.socials {
+  left: 24px;
+  padding-left: 20px;
+  min-height: 20px;
+  padding-bottom: 50px;
+}
