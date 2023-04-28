@@ -1,6 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/Roboto');
 @import url('https://fonts.cdnfonts.com/css/poppins');
+@import url('https://fonts.cdnfonts.com/css/Inter');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+/* Introduction Page */
 
 * {
   box-sizing: border-box;
@@ -22,6 +25,13 @@
 
 .headline.flex_column {
   align-items: flex-start;
+  width: 375px;
+  height: 590px;
+  background: #1c1a19;
+  padding: 120px 24px 120px 24px;
+  background-image: url('./img/index_background.png');
+  background-repeat: no-repeat;
+  background-position: right 120%;
 }
 
 .top_header {
@@ -49,15 +59,6 @@
   line-height: 24px;
 }
 
-.main_container {
-  width: 375px;
-  height: 590px;
-  background: #1c1a19;
-  padding: 120px 24px 120px 24px;
-  background-image: url('./img/index_background.png');
-  background-repeat: no-repeat;
-  background-position: right 120%;
-}
 
 .intro_1 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
@@ -118,3 +119,115 @@
   min-height: 20px;
   padding-bottom: 50px;
 }
+
+/*  Recent Work */
+.work_section {
+    display: grid;
+    width: 375px;
+    height: 3455px;
+    left: 0px;
+    top: 682px;
+    border-radius: 0px;
+    gap: 10px;
+    padding: 24px;
+ 
+}
+
+.rec_works_section.main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 327px;
+}
+
+.rec_works_header.main {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    border: solid gold;
+    width: 327px;
+}
+
+.vector_line   {
+    width: 327px;
+    border: 1px solid #212121;
+    margin-bottom: 50px;
+
+}
+
+.backgrnd_img.main {
+    background-image: url('./img/recent_work_bkimg.png');
+    height: 237px;
+    width: 327px;
+    border-radius: 0px;
+
+}
+
+.multi_post_stories {
+    width: 327px;
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #091E42;
+    border: solid gold;
+}
+
+.recent_work_desc.main {
+    height: 147px;
+    width: 327px;
+    height: 147px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091E42;
+    border: solid gold;
+}
+
+.rec_skills_list.main {
+    width: 327px;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: solid gold;
+    padding: 0px;
+}
+
+.rec_skills.main {
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091E42;
+    border: 1px solid #8993A4;
+    background: #FFFFFF;
+    padding: 10px;
+}
+
+.rec_proj_btn {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;    
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  background: #FF6B00;
+  color:#FFFFFF;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+}
+
+.rec_proj_btn.main {
+  align-self: flex-start;
+}
+
+
