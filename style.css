@@ -1,12 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/Roboto');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 @import url('https://fonts.cdnfonts.com/css/Inter');
+@import url('https://fonts.cdnfonts.com/css/InaiMathi');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 /* Introduction Page */
 
 * {
   box-sizing: border-box;
+
 }
 
 .flex_row {
@@ -38,7 +40,7 @@
   color: #fff;
   background: #3c3a39;
   width: 375px;
-  height: 92px;
+  /* height: 92px; */
   padding-left: 24px;
   padding-right: 24px;
   left: 0;
@@ -123,11 +125,9 @@
 /*  Work  sections */
 .work_section {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
     width: 375px;
-    height: 3455px;
-    grid-gap: 50px;
+    height: 100%;
+    grid-gap: 40px;
     padding: 120px 20px 120px 20px;
   }
 
@@ -144,7 +144,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    padding: 10px 0 10px 0;
+    /* padding: 10px 0 10px 0; */
 
 }
 
@@ -207,7 +207,7 @@
     padding: 10px;
 }
 
-.rec_proj_btn {
+.rec_proj_btn ,.about_us_btn{
   width: 327px;
   align-self: flex-start;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -223,11 +223,12 @@
 }
 
 .rec_proj_btn.main {
-  width: 135px;
+  width: auto;
+  
 }
 
 
-/*  */
+/* Recent works */
 
 .rec_works_section {
   display: flex;
@@ -287,4 +288,66 @@
   padding: 10px 12px;  
   margin-right: 10px;
 }
+
+
+/* About us */
+
+.about_us.main {
+  width: 375px;
+  height: 100%;
+  background: #1C1A19;
+  padding: 120px 20px 120px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+
+.about_us_header{
+  width: 100%;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #FF6B00;
+  margin: 0;
+
+}
+
+.about_us_desc{
+  width: 327px;
+  height: 148px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F4F5F7;
+}
+
+.about_us_btn {
+  width: auto;
+  align-self:flex-start ;
+}
+
+.backgrnd_img_about_us{
+  background-image: url("./img/about_us_bckgrnd.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 220px;
+  width: 375px;
+}
+
+.vector-line.about_us  {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  margin-top:20px ;
+}
+
+
+
+
 
