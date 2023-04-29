@@ -348,6 +348,69 @@
 }
 
 
+/* Work skills , language and framework */
+
+.work_skills {
+  width: 375px;
+  background: #1C1A19;
+  padding: 24px;
+
+}
+
+.about_us_headers_grp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.about_us_headers {
+  margin: 0; /* remove default margin */
+}
+.bullet_icons {
+  margin-right: 10px;
+}
+
+.about_us_headers {
+  font-family: 'InaiMathi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.bullet_icons {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;  
+}
+.bullet_icons.diamond {
+  transform: rotate(-45deg);
+}
+
+.bullet_icons.circle {
+  border-radius: 150px;
+}
+
+.about_us_ul {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_us_li {
+  list-style: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;  
+}
 
 
 
