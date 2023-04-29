@@ -8,7 +8,6 @@
 
 * {
   box-sizing: border-box;
-
 }
 
 .flex_row {
@@ -40,6 +39,7 @@
   color: #fff;
   background: #3c3a39;
   width: 375px;
+
   /* height: 92px; */
   padding-left: 24px;
   padding-right: 24px;
@@ -121,67 +121,64 @@
   padding-bottom: 50px;
 }
 
-
 /*  Work  sections */
 .work_section {
-    display: grid;
-    width: 375px;
-    height: 100%;
-    grid-gap: 40px;
-    padding: 120px 20px 120px 20px;
-  }
-
-.rec_works_section_main {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    width: 327px;
-  }
-
-.rec_works_header_main {
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 52px;
-    /* padding: 10px 0 10px 0; */
-
+  display: grid;
+  width: 375px;
+  height: 100%;
+  grid-gap: 40px;
+  padding: 120px 20px 120px 20px;
 }
 
-.vector_line_main   {
-    width: 327px;
-    border: 1px solid #212121;
-    margin-bottom: 100px;
+.rec_works_section_main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 327px;
+}
+
+.rec_works_header_main {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+
+  /* padding: 10px 0 10px 0; */
+}
+
+.vector_line_main {
+  width: 327px;
+  border: 1px solid #212121;
+  margin-bottom: 100px;
 }
 
 .backgrnd_img_main {
-    background-image: url('./img/recent_work_bkimg.png');
-    height: 237px;
-    width: 327px;
+  background-image: url('./img/recent_work_bkimg.png');
+  height: 237px;
+  width: 327px;
 }
 
 .multi_post_stories {
-    width: 327px;
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #091E42;
-    margin-bottom: 0px;
+  width: 327px;
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  margin-bottom: 0;
 }
 
 .recent_work_desc_main {
-    height: 147px;
-    width: 327px;
-    height: 147px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #091E42;
-    margin-bottom: 0px;
+  width: 327px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin-bottom: 0;
 }
 
 .rec_skills_list_main {
@@ -190,77 +187,73 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
-
 }
 
 .rec_skills_main {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #091E42;
-    border: 1px solid #8993A4;
-    background: #FFFFFF;
-    padding: 10px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  border: 1px solid #8993a4;
+  background: #fff;
+  padding: 10px;
 }
 
-.rec_proj_btn ,.about_us_btn{
+.rec_proj_btn,
+.about_us_btn {
   width: 327px;
   align-self: flex-start;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;    
+  line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
   padding: 12px;
-  background: #FF6B00;
-  color:#FFFFFF;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+  background: #ff6b00;
+  color: #fff;
 }
 
 .rec_proj_btn.main {
   width: auto;
-  
 }
 
-
 /* Recent works */
-
 .rec_works_section {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: flex-end;
-  height: 386px;  
+  height: 386px;
   background-image: url(./img/prof_art_printing_data.png);
   background-repeat: no-repeat;
-
- }
+}
 
 .rec_works_header {
   width: 295px;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
   height: 81px;
-  margin: 0px;
+  margin: 0;
 }
 
 .recent_work_desc {
   width: 295px;
-  font-family: 'Inter';
+  font-family: 'Inter' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
   margin-top: 5px;
   padding-top: 5px;
 }
@@ -272,8 +265,8 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0;
-  margin-top: 0px;
-  padding-top: 0px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .rec_skills {
@@ -283,41 +276,37 @@
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
-  background: #FFFFFF3D;
-  padding: 10px 12px;  
+  color: #fff;
+  background: #ffffff3d;
+  padding: 10px 12px;
   margin-right: 10px;
 }
 
-
 /* About us */
-
 .about_us.main {
   width: 375px;
   height: 100%;
-  background: #1C1A19;
+  background: #1c1a19;
   padding: 120px 20px 120px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-
-.about_us_header{
+.about_us_header {
   width: 100%;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
   margin: 0;
-
 }
 
-.about_us_desc{
+.about_us_desc {
   width: 327px;
   height: 148px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -325,15 +314,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .about_us_btn {
   width: auto;
-  align-self:flex-start ;
+  align-self: flex-start;
 }
 
-.backgrnd_img_about_us{
+.backgrnd_img_about_us {
   background-image: url("./img/about_us_bckgrnd.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -341,20 +330,18 @@
   width: 375px;
 }
 
-.vector-line.about_us  {
+.vector-line.about_us {
   width: 100%;
-  border: 1px solid #FFFFFF;
-  margin-top:20px ;
+  border: 1px solid #fff;
+  margin-top: 20px;
 }
-
 
 /* Work skills , language and framework */
 
 .work_skills {
   width: 375px;
-  background: #1C1A19;
+  background: #1c1a19;
   padding: 24px;
-
 }
 
 .about_us_headers_grp {
@@ -364,27 +351,23 @@
   margin: 0;
 }
 
-.about_us_headers {
-  margin: 0; /* remove default margin */
-}
 .bullet_icons {
   margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
 }
 
 .about_us_headers {
-  font-family: 'InaiMathi';
+  font-family: 'InaiMathi', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  color: #fff;
+  margin: 0;
 }
 
-.bullet_icons {
-  width: 18px;
-  height: 18px;
-  background: #FF6B00;  
-}
 .bullet_icons.diamond {
   transform: rotate(-45deg);
 }
@@ -394,7 +377,7 @@
 }
 
 .about_us_ul {
-  display: flex ;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -402,15 +385,12 @@
 
 .about_us_li {
   list-style: none;
-  font-family: 'Inter';
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;  
+  color: #fff;
 }
-
-
-
