@@ -328,6 +328,29 @@ body {
   align-self: flex-start;
 }
 
+/* Button Interctions */
+
+button:enabled {
+  background: #f55800;
+  color: #fff;
+}
+
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+button:disabled {
+  color: #5b5957;
+  background: #f4f1f0;
+}
+
 .backgrnd_img_about_us {
   background-image: url("./img/about_us_bckgrnd.png");
   background-repeat: no-repeat;
