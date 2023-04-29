@@ -59,7 +59,6 @@
   line-height: 24px;
 }
 
-
 .intro_1 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -120,49 +119,45 @@
   padding-bottom: 50px;
 }
 
-/*  Recent Work */
+
+/*  Work  sections */
 .work_section {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
     width: 375px;
     height: 3455px;
-    left: 0px;
-    top: 682px;
-    border-radius: 0px;
-    gap: 10px;
-    padding: 24px;
- 
-}
+    grid-gap: 50px;
+    padding: 120px 20px 120px 20px;
+  }
 
-.rec_works_section.main {
+.rec_works_section_main {
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 327px;
-}
+  }
 
-.rec_works_header.main {
+.rec_works_header_main {
     font-family: 'Crete Round';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    border: solid gold;
-    width: 327px;
+    padding: 10px 0 10px 0;
+
 }
 
-.vector_line   {
+.vector_line_main   {
     width: 327px;
     border: 1px solid #212121;
-    margin-bottom: 50px;
-
+    margin-bottom: 100px;
 }
 
-.backgrnd_img.main {
+.backgrnd_img_main {
     background-image: url('./img/recent_work_bkimg.png');
     height: 237px;
     width: 327px;
-    border-radius: 0px;
-
 }
 
 .multi_post_stories {
@@ -173,10 +168,10 @@
     font-size: 32px;
     line-height: 44px;
     color: #091E42;
-    border: solid gold;
+    margin-bottom: 0px;
 }
 
-.recent_work_desc.main {
+.recent_work_desc_main {
     height: 147px;
     width: 327px;
     height: 147px;
@@ -186,22 +181,21 @@
     font-size: 16px;
     line-height: 24px;
     color: #091E42;
-    border: solid gold;
+    margin-bottom: 0px;
 }
 
-.rec_skills_list.main {
-    width: 327px;
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    border: solid gold;
-    padding: 0px;
+.rec_skills_list_main {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 327px;
+
 }
 
-.rec_skills.main {
-    box-sizing: border-box;
+.rec_skills_main {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -214,6 +208,8 @@
 }
 
 .rec_proj_btn {
+  width: 327px;
+  align-self: flex-start;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -227,7 +223,68 @@
 }
 
 .rec_proj_btn.main {
-  align-self: flex-start;
+  width: 135px;
 }
 
+
+/*  */
+
+.rec_works_section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 386px;  
+  background-image: url(./img/prof_art_printing_data.png);
+  background-repeat: no-repeat;
+
+ }
+
+.rec_works_header {
+  width: 295px;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+  height: 81px;
+  margin: 0px;
+}
+
+.recent_work_desc {
+  width: 295px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+.rec_skills_list {
+  width: 295px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.rec_skills {
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: #FFFFFF3D;
+  padding: 10px 12px;  
+  margin-right: 10px;
+}
 
