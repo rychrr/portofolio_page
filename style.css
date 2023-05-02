@@ -423,3 +423,35 @@ button:disabled {
   text-align: center;
   color: #fff;
 }
+
+.contact_form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 327px;
+  padding: 50px 24px 50px 24px
+
+}
+
+.contact_form_widget  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start ;
+}
+
+
+.form_notes {
+  width: 327px;
+  height: 216px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+}
+
