@@ -430,22 +430,76 @@ button:disabled {
   justify-items: center;
   align-items: flex-start;
   height: 100%;
-  width: 327px;
-  padding: 50px 24px 50px 24px
+  width: 100vw;
+  padding: 50px 24px 50px 24px;
 
 }
 
 .contact_form_widget  {
+  width: 85vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start ;
+  padding: 50px 24px 50px 24px;
 }
 
+label {
+  margin-bottom: 20px;
+
+}
+
+input {
+  border:none;
+  border-bottom: solid 1px #DBD8D7 ;
+  padding: 10px;
+  width: 75vw;
+  
+}
+
+textarea {
+  width: 75vw;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  background: #FBF8F7;
+  border: none;
+
+}
+
+input::placeholder{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #979493;
+  }
+
+ .submit_btn {
+  width: 40vw;
+  align-self: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  background: #ff6b00;
+  color: #fff;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+ }
 
 .form_notes {
-  width: 327px;
-  height: 216px;
+  width: 85vw;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
