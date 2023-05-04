@@ -6,12 +6,12 @@
 
 * {
   box-sizing: border-box;
-  }
+}
 
 body {
   padding: 0;
   margin: 0;
-  }
+}
 
 /* Header secion of Page */
 
@@ -23,9 +23,9 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   background: #3c3a39;
- }
+}
 
- .top_header a {
+.top_header a {
   color: #fff;
   text-decoration: none;
 }
@@ -38,7 +38,7 @@ body {
   line-height: 24px;
 }
 
- /* Headline Section of the Page  */
+/* Headline Section of the Page  */
 
 .headline {
   display: flex;
@@ -52,7 +52,7 @@ body {
   background-position: right 110%;
 }
 
-.headline >h1 {
+.headline > h1 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -61,9 +61,8 @@ body {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin-top: 2px;
-  margin-bottom: 2px ;
-  }
-
+  margin-bottom: 2px;
+}
 
 .intro_2 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -73,7 +72,7 @@ body {
   line-height: 32px;
   color: #fff5e1;
   margin-top: 2px;
-  margin-bottom: 2px ;
+  margin-bottom: 2px;
 }
 
 .intro_3 {
@@ -111,7 +110,6 @@ body {
   grid-gap: 40px;
   padding: 100px 24px 100px 24px;
 }
-
 
 .rec_works_section_main {
   display: flex;
@@ -155,7 +153,7 @@ body {
   margin-bottom: 0;
 }
 
-.rec_works_section_main >p  {
+.rec_works_section_main > p {
   width: 85vw;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -207,7 +205,6 @@ body {
 .rec_proj_btn.main {
   align-self: flex-start;
   width: 40vw;
-
 }
 
 /* Recent works */
@@ -232,9 +229,9 @@ body {
   line-height: 44px;
   color: #fff;
   margin: 0;
-} 
+}
 
-.rec_works_section >p {
+.rec_works_section > p {
   width: 80vw;
   font-family: 'Inter' Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -244,7 +241,6 @@ body {
   color: #fff;
   margin-top: 5px;
 }
-
 
 .rec_skills_list {
   width: 80vw;
@@ -257,7 +253,7 @@ body {
   padding-top: 0;
 }
 
-.rec_skills_list >li {
+.rec_skills_list > li {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -291,7 +287,7 @@ body {
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin:0px;
+  margin: 0;
 }
 
 .about_us > p {
@@ -307,8 +303,7 @@ body {
 .about_us_btn {
   width: 50vw;
   align-self: flex-start;
-  margin-left: 5px ;
-  
+  margin-left: 5px;
 }
 
 .backgrnd_img_about_us {
@@ -454,20 +449,18 @@ input::placeholder {
 textarea {
   width: 75vw;
   border: none;
-  background: #FBF8F7;
+  background: #fbf8f7;
   padding: 20px;
 }
 
-textarea::placeholder{
-  color: #3C3A39;
+textarea::placeholder {
+  color: #3c3a39;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-
 }
-
 
 .submit_btn {
   width: 40vw;
