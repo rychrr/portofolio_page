@@ -100,10 +100,7 @@ body {
   margin-bottom: 50px;
 }
 
-
-
 /*  WORK  SECTION  MAIN */
-
 .work_section {
   display: grid;
   width: 100vw;
@@ -265,9 +262,7 @@ body {
   margin-right: 10px;
 }
 
-
 /* About us */
-
 .about_us.main {
   width: 100vw;
   background: #1c1a19;
@@ -320,7 +315,6 @@ body {
   margin-top: 20px;
 }
 
-
 /* Button Interctions */
 
 button:enabled {
@@ -344,10 +338,7 @@ button:disabled {
   background: #f4f1f0;
 }
 
-
-
 /* Work skills , language and framework */
-
 .work_skills {
   width: 100vw;
   background: #1c1a19;
@@ -404,7 +395,6 @@ button:disabled {
   text-align: center;
   color: #fff;
 }
-
 
 /* contact form */
 .contact_form {
