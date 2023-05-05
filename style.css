@@ -213,6 +213,12 @@ body {
   background: #ff6b00;
   color: #fff;
   border: none;
+
+  /* transition */
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  
 }
 
 .rec_proj_btn.main {
