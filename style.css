@@ -28,7 +28,23 @@ body {
 .top_header a {
   color: #fff;
   text-decoration: none;
+
+  animation-name: logo_rotate;
+  animation-duration: 3s;
 }
+
+@keyframes logo_rotate {
+  from { transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: rotate(360deg);
+
+  }
+}
+
+
 
 .top_nav > h3 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
