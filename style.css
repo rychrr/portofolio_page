@@ -28,23 +28,19 @@ body {
 .top_header a {
   color: #fff;
   text-decoration: none;
-
   animation-name: logo_rotate;
   animation-duration: 3s;
 }
 
 @keyframes logo_rotate {
-  from { transform: rotate(0deg);
-
+  from {
+    transform: rotate(0deg);
   }
 
   to {
     transform: rotate(360deg);
-
   }
 }
-
-
 
 .top_nav > h3 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -130,6 +126,13 @@ body {
   align-items: center;
   justify-content: center;
   width: 85vw;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.rec_works_section_main:hover {
+  transform: scale(1.125);
 }
 
 .rec_works_section_main > h2 {
@@ -218,7 +221,6 @@ body {
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: ease-in-out;
-  
 }
 
 .rec_proj_btn.main {
