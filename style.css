@@ -4,32 +4,39 @@
 @import url('https://fonts.cdnfonts.com/css/InaiMathi');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
+
 * {
   box-sizing: border-box;
-}
+ }
 
 body {
   padding: 0;
   margin: 0;
 }
 
-/* Header secion of Page */
 
+/* Header secion of Page */
 .top_header {
   display: flex;
   width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 5vw;
+  padding-right: 5vw;
   background: #3c3a39;
+  border: solid gold;
 }
 
 .top_header a {
   color: #fff;
   text-decoration: none;
+  border: solid gold;
+  
 }
 
+.desktop_menu {
+  display: none;
+}
 
 .top_nav > h3 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -37,6 +44,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+ 
 }
 
 /* Headline Section of the Page  */
@@ -47,7 +55,7 @@ body {
   align-items: flex-start;
   width: 100vw;
   background: #1c1a19;
-  padding: 100px 24px 100px 24px;
+  padding: 15vh 5vw 15vh 5vw;
   background-image: url('./img/index_background.png');
   background-repeat: no-repeat;
   background-position: right 110%;
@@ -63,6 +71,7 @@ body {
   color: #ff6b00;
   margin-top: 2px;
   margin-bottom: 2px;
+  border: solid gold;
 }
 
 .intro_2 {
@@ -74,6 +83,7 @@ body {
   color: #fff5e1;
   margin-top: 2px;
   margin-bottom: 2px;
+  border: solid gold;
 }
 
 .intro_3 {
@@ -84,6 +94,7 @@ body {
   line-height: 24px;
   color: #fff;
   width: 85vw;
+  border: solid gold;
 }
 
 .social_media_list {
@@ -93,6 +104,7 @@ body {
   margin-top: 0;
   padding: 0;
   align-items: baseline;
+
 }
 
 .socials {
@@ -100,6 +112,69 @@ body {
   min-height: 20px;
   margin-bottom: 50px;
 }
+
+/* Desktop adjustments */
+
+@media only screen and (min-width: 768px) {
+
+  /* Desktop adjustments  for header tags */
+  .desktop_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:  center  ;
+    align-items: center;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .desktop_menu > a {
+    padding: 5%;
+  }
+
+  .top_header{
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  #menubar {
+    display: none;
+  }
+
+   /* Deskto  p adjustments  for headline */
+   .headline {
+    background: #1c1a19;
+    padding: 15vh 10vw 15vh 10vw;
+    background-image: url('./img/index_background_desk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+  }
+
+  .headline h1,
+  .headline p {
+    width: 35vw;
+    }
+
+
+  .social_media_list {
+    display: block;
+    position: absolute;
+    position: absolute;
+    left: 1%;
+    top: 30%
+  }
+
+  .socials {
+    margin: 5px;
+  }
+  
+
+  }
+
 
 /*  WORK  SECTION  MAIN */
 .work_section {
