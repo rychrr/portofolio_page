@@ -58,7 +58,7 @@ body {
   padding: 15vh 5vw 15vh 5vw;
   background-image: url('./img/index_background.png');
   background-repeat: no-repeat;
-  background-position: right 110%;
+  background-position: right bottom;
 }
 
 .headline > h1 {
@@ -108,15 +108,187 @@ body {
 }
 
 .socials {
-  padding-left: 20px;
+  padding-left: 5vw;
   min-height: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
 }
 
-/* Desktop adjustments */
 
-@media only screen and (min-width: 768px) {
+/*  WORK  SECTION  MAIN */
+.work_section {
+  display: grid;
+  width: 100vw;
+  grid-gap: 40px;
+  padding: 15vh 5vw 15vh 5vw;
 
+}
+
+.rec_works_section_main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 85vw;
+}
+
+.rec_works_section_main > div > h2 {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+  .vector_line.main {
+    width: 85vw;
+    border: 0.5px solid #212121;
+    margin-bottom: 100px;
+  }
+
+  .backgrnd_img_main {
+    background-image: url('./img/recent_work_bkimg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    height: 237px;
+    width: 85vw;
+    margin-bottom:8px;
+  }
+  
+  .multi_post_stories {
+    width: 85vw;
+    font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #091e42;
+    margin: 0;
+  }
+
+
+
+  .rec_works_section_main > p {
+    width: 85vw;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #091e42;
+    margin-bottom: 0;
+  }
+  
+  .rec_skills_list_main {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 85vw;
+  }
+  
+  
+  .rec_skills_list_main > li {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
+    border: 1px solid #8993a4;
+    background: #fff;
+    padding: 10px;
+  }
+  
+  .rec_proj_btn,
+  .about_us_btn {
+    width: 90vw;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    background: #ff6b00;
+    color: #fff;
+    border: none;  
+  }
+  
+  .rec_proj_btn.main {
+    align-self: flex-start;
+    width: 40vw;
+  }
+  
+  /* Recent works */
+  
+  .rec_works_section {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 52vh;
+    background-image: url(./img/prof_art_printing_data.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .rec_works_section > h2 {
+    width: 80vw;
+    font-family: 'Crete Round' Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .rec_works_section > p {
+    width: 80vw;
+    font-family: 'Inter' Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 5px;
+  }
+  
+  .rec_skills_list {
+    width: 80vw;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .rec_skills_list > li {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    background: #ffffff3d;
+    padding: 10px 12px;
+    margin-right: 10px;
+  }
+  
+
+
+
+
+
+
+
+  @media only screen and (min-width: 768px) {
   /* Desktop adjustments  for header tags */
   .desktop_menu {
     display: flex;
@@ -144,7 +316,7 @@ body {
     display: none;
   }
 
-   /* Deskto  p adjustments  for headline */
+   /* Desktop adjustments  for headline */
    .headline {
     background: #1c1a19;
     padding: 15vh 10vw 15vh 10vw;
@@ -159,185 +331,92 @@ body {
     width: 35vw;
     }
 
-
   .social_media_list {
     display: block;
     position: absolute;
-    position: absolute;
-    left: 1%;
-    top: 30%
+    left: 0%;
+    top: 30%;
   }
 
   .socials {
     margin: 5px;
   }
-  
+
+
+  /* Work sections */
+  .work_sec_headers {
+    display: flex;
+    width: 85vw;
+    justify-content: baseline;
+    align-items: baseline;
+    border: solid gold;
+    margin: 0px;
+    padding: 0px;
+
+  }
+
+  .vector_line.main {
+    flex: 1;
+    margin-left: 1%;
+  }
+
+  .flex_section {
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border: solid gold;
+    padding: 0px;
+    margin: 0px;
+
+  }
+  .backgrnd_img_main{
+    width:60%;
+    background-image: url('./img/recent_work_bkimg.png');
+    background-size: contain;
+    height: 448px;
+    padding: 0px;
+    margin: 0px;
+    border: solid gold;
+  }
+
+  .multipost_card{
+    width:45%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid gold;
+    float: top;
+  }
+
+  .rec_skills_list_main {
+    width: 45%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .rec_skills_list_main >li {
+    width: 45%;
+    margin-right: 10px;
+    padding:10px;
+  }
+
+  .rec_skills_list_main > li:nth-child(3) {
+    flex-grow:2;
+    
+  }
+ 
+  .rec_proj_btn.main {
+    width: 45%;
+  }
 
   }
 
 
-/*  WORK  SECTION  MAIN */
-.work_section {
-  display: grid;
-  width: 100vw;
-  grid-gap: 40px;
-  padding: 100px 24px 100px 24px;
-}
 
-.rec_works_section_main {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 85vw;
-}
-
-.rec_works_section_main > h2 {
-  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 52px;
-}
-
-.vector_line.main {
-  width: 85vw;
-  border: 0.5px solid #212121;
-  margin-bottom: 100px;
-}
-
-.backgrnd_img_main {
-  background-image: url('./img/recent_work_bkimg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-self: center;
-  height: 237px;
-  width: 85vw;
-}
-
-.multi_post_stories {
-  width: 85vw;
-  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #091e42;
-  margin-bottom: 0;
-}
-
-.rec_works_section_main > p {
-  width: 85vw;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #091e42;
-  margin-bottom: 0;
-}
-
-.rec_skills_list_main {
-  list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  width: 85vw;
-}
-
-.rec_skills_list_main > li {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-  border: 1px solid #8993a4;
-  background: #fff;
-  padding: 10px;
-}
-
-.rec_proj_btn,
-.about_us_btn {
-  width: 90vw;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  padding: 10px;
-  background: #ff6b00;
-  color: #fff;
-  border: none;  
-}
-
-.rec_proj_btn.main {
-  align-self: flex-start;
-  width: 40vw;
-}
-
-/* Recent works */
-
-.rec_works_section {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 52vh;
-  background-image: url(./img/prof_art_printing_data.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.rec_works_section > h2 {
-  width: 80vw;
-  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff;
-  margin: 0;
-}
-
-.rec_works_section > p {
-  width: 80vw;
-  font-family: 'Inter' Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  margin-top: 5px;
-}
-
-.rec_skills_list {
-  width: 80vw;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.rec_skills_list > li {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  background: #ffffff3d;
-  padding: 10px 12px;
-  margin-right: 10px;
-}
-
+  
 /* About us */
 .about_us.main {
   width: 100vw;
@@ -390,6 +469,10 @@ body {
   border: 1px solid #fff;
   margin-top: 20px;
 }
+
+
+
+
 
 /* Button Interctions */
 
