@@ -771,7 +771,7 @@ textarea::placeholder {
     margin-top: 20px;
   }
 }
-
+  
 /* Button Interctions */
 button:enabled {
   background: #f55800;
