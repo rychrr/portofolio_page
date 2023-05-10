@@ -103,6 +103,8 @@ body {
   margin-bottom: 5vh;
 }
 
+
+
 /* WORK  SECTION  MAIN/ */
 .work_section {
   display: grid;
@@ -127,18 +129,6 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  margin: 0;
-}
-
-.about_us > h2 {
-  width: 85vw;
-  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
   margin: 0;
 }
 
@@ -279,53 +269,74 @@ body {
 }
 
 /* About us */
-.about_us.main {
-  width: 100vw;
-  background: #1c1a19;
-  padding: 15vh 5vw 15vh 5vw;
 
-  /* padding: 100px 24px 100px 24px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.about_us_main {
+  background: #1c1a19; 
+  display: block ;
+  padding: 15vh 10vw 15vh 10vw;
+  background-image: url("./img/about_us_bckgrnd.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;  
+
 }
 
-.about_us > p {
-  width: 85vw;
+
+.about_us  {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.about_us > h2 {
+  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 0;
+}
+
+.about_us  >  p  {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
+  border: solid gold;
+
+}
+
+.about_us > p:nth-child(3) {
+  display: none;
 }
 
 .about_us_btn {
-  width: 50vw;
+  width: auto; 
   align-self: flex-start;
-  margin-left: 5px;
+  margin-bottom: 50px;
 }
 
-.backgrnd_img_about_us {
-  background-image: url("./img/about_us_bckgrnd.png");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  height: 220px;
-  width: 85vw;
-}
-
-.vector-line.about_us {
+.vector-line {
   width: 100%;
   border: 1px solid #fff;
-  margin-top: 20px;
+  margin: 0px;  
 }
 
+
 /* Work skills , language and framework */
+
 .work_skills {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
   background: #1c1a19;
-  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  border: solid gold;
+  
 }
 
 .about_us_headers_grp {
@@ -378,6 +389,8 @@ body {
   text-align: center;
   color: #fff;
 }
+
+
 
 /* contact form */
 .contact_form {
@@ -725,53 +738,69 @@ textarea::placeholder {
   }
 
   /* About us desktop version */
-  .about_us.main {
-    width: 100vw;
-    background: #1c1a19;
-    padding: 15vh 5vw 15vh 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
+.about_us_main {
+  background-image: url("./img/desktop_boutus.png");
+  background-position: right center;  
+  background-repeat: no-repeat;
+}
 
-  .backgrnd_img_about_us {
-    background-image: url("./img/about_me_desk.png");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
+  .about_us  {
+    width: 50%;
+    background-image: none;
   }
-
+  
   .about_us > h2 {
-    font-family: 'Crete Round', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-size: 72px;
-    line-height: 82px;
-    color: #f55800;
+    border: solid gold;
   }
-
-  .about_us > p {
+  
+  .about_us > p  {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     color: #f4f5f7;
+    border: solid gold;
+  }
+
+  .about_us > p:nth-child(3) {
+    display:block;
+  }
+
+  .about_us > p:nth-child(2) {
+    display: none;
   }
 
   .about_us_btn {
-    width: auto;
+    width: auto; 
     align-self: flex-start;
-    margin-left: 5px;
+    margin-bottom: 50px;
+  }
+  
+  .vector-line {
+    width: auto ;
+    border: 1px solid #fff;
+    margin: 0px;  
   }
 
-  .vector-line.about_us {
-    width: 100%;
-    border: 1px solid #fff;
-    margin-top: 20px;
+  .work_skills {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    border: solid gold;
+
   }
+
+.about_us_headers_grp {
+  justify-content: flex-start;
+  align-items: baseline;
+  border: solid gold;
 }
-  
+
+
+}
+
+
 /* Button Interctions */
 button:enabled {
   background: #f55800;
@@ -794,6 +823,7 @@ button:disabled {
   background: #f4f1f0;
 }
 
+
 footer {
   width: 100vw;
   display: flex;
@@ -811,12 +841,6 @@ footer {
   align-items: baseline;
 }
 
-.vector-line {
-  margin-bottom: 30px;
-  width: 100vw;
-  height: 1px;
-  background-color: #dfe1e6;
-}
 
 .footer-decorator {
   width: 40vw;
