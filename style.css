@@ -331,6 +331,7 @@ body {
 
 .work_skills {
   display: flex;
+  padding: 100px 24px 100px 24px;
   flex-direction: column;
   background: #1c1a19;
   justify-content: center;
@@ -340,10 +341,13 @@ body {
 }
 
 .about_us_headers_grp {
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
+  border: solid gold;
 }
 
 .bullet_icons {
@@ -376,6 +380,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid gold;
+  padding: 10px;
 }
 
 .about_us_li {
@@ -389,6 +395,8 @@ body {
   text-align: center;
   color: #fff;
 }
+
+
 
 
 
