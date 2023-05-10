@@ -787,30 +787,36 @@ textarea::placeholder {
   }
 
 
-/* SKills sections  */
+/* SKills sections Desktop Version */
 .work_skills {
   display: grid;
   padding: 15vh 5vw 15vh 5vw;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
-  gap: 20px;
+  gap: 10px;
 }
 
 .about_us_headers_grp {
  align-items: baseline;
  justify-content: flex-start;
+ margin: 0px;
 }
 
 .about_us_ul {
   justify-content: baseline ;
   align-items: flex-start;
-
+  margin: 0px;
 }
 
 .about_us_headers_grp:nth-child(1),
 .about_us_headers_grp:nth-child(2),
 .about_us_headers_grp:nth-child(5) {
   grid-row: 1 / 2;
+}
+
+.about_us_ul.language{
+  margin: 0px;
+
 }
 
 .about_us_ul.language,
@@ -833,6 +839,9 @@ textarea::placeholder {
 .about_us_ul.skills:nth-child(2) {
   grid-column: 3 / 4;
 }
+
+
+
 
 
 }
