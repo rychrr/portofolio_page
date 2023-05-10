@@ -359,6 +359,13 @@ button:disabled {
   background: #ff6b00;
 }
 
+.about_us_ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .about_us_headers {
   font-family: 'InaiMathi', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -375,13 +382,6 @@ button:disabled {
 
 .bullet_icons.circle {
   border-radius: 150px;
-}
-
-.about_us_ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .about_us_li {
