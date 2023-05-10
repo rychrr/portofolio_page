@@ -272,17 +272,17 @@ body {
 
 .about_us_main {
   background: #1c1a19; 
-  display: block ;
-  padding: 15vh 10vw 15vh 10vw;
   background-image: url("./img/about_us_bckgrnd.png");
   background-repeat: no-repeat;
   background-position: right bottom;  
+  margin: 0px;
 
 }
 
 
 .about_us  {
   display: flex;
+  padding: 15vh 5vw 15vh 5vw;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -749,16 +749,11 @@ textarea::placeholder {
 .about_us_main {
   background-image: url("./img/desktop_boutus.png");
   background-position: right center;  
-  background-repeat: no-repeat;
 }
 
   .about_us  {
     width: 50%;
     background-image: none;
-  }
-  
-  .about_us > h2 {
-    border: solid gold;
   }
   
   .about_us > p  {
@@ -791,18 +786,52 @@ textarea::placeholder {
     margin: 0px;  
   }
 
-  .work_skills {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    border: solid gold;
 
-  }
+/* SKills sections  */
+.work_skills {
+  display: grid;
+  padding: 15vh 5vw 15vh 5vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
 
 .about_us_headers_grp {
-  justify-content: flex-start;
-  align-items: baseline;
-  border: solid gold;
+ align-items: baseline;
+ justify-content: flex-start;
+}
+
+.about_us_ul {
+  justify-content: baseline ;
+  align-items: flex-start;
+
+}
+
+.about_us_headers_grp:nth-child(1),
+.about_us_headers_grp:nth-child(2),
+.about_us_headers_grp:nth-child(5) {
+  grid-row: 1 / 2;
+}
+
+.about_us_ul.language,
+.about_us_ul.skills:nth-child(1),
+.about_us_ul.skills:nth-child(2 ) {
+  grid-row: 2 / 3;
+}
+
+.about_us_headers_grp:nth-child(1),
+.about_us_ul.language {
+  grid-column: 1 / 2;
+}
+
+.about_us_headers_grp:nth-child(2),
+.about_us_ul.skills:nth-child(1) {
+  grid-column: 2 / 3;
+}
+
+.about_us_headers_grp:nth-child(5),
+.about_us_ul.skills:nth-child(2) {
+  grid-column: 3 / 4;
 }
 
 
