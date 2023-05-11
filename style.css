@@ -1,8 +1,11 @@
+/* IMPORTING FONTS  */
 @import url('https://fonts.cdnfonts.com/css/Roboto');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 @import url('https://fonts.cdnfonts.com/css/Inter');
 @import url('https://fonts.cdnfonts.com/css/InaiMathi');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
+/* SET BODY DDEFAUlt  */
 
 * {
   box-sizing: border-box;
@@ -14,15 +17,17 @@ body {
 }
 
 
-/* Header secion of Page */
+/* HEADER SECTION OF PAGE */
+
 .top_header {
+  width: 100vw;  /* use responsive measurements */
   display: flex;
-  width: 100vw;
   justify-content: space-between;
   align-items: center;
+  background: #3c3a39;
   padding-left: 5vw;
   padding-right: 5vw;
-  background: #3c3a39;
+
 }
 
 .top_header a {
@@ -31,7 +36,7 @@ body {
 }
 
 .desktop_menu {
-  display: none;
+  display: none; /* Hide menu for screensize abv 765px */
 }
 
 .top_nav > h3 {
@@ -42,15 +47,16 @@ body {
   line-height: 24px;
 }
 
-/* Headline Section of the Page  */
+
+/* HEADLINE SECTION OF PAGE  */
 
 .headline {
+  width: 100vw;
+  padding: 15vh 5vw 15vh 5vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100vw;
   background: #1c1a19;
-  padding: 15vh 5vw 15vh 5vw;
   background-image: url('./img/index_background.png');
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -101,15 +107,14 @@ body {
   padding-left: 5vw;
   min-height: 20px;
   margin-bottom: 5vh;
-}
+} 
 
 
-
-/* WORK  SECTION  MAIN/ */
+/* WORK  SECTION  MAIN AREA */
 .work_section {
   display: grid;
   width: 100vw;
-  grid-gap: 40px;
+  grid-gap: 30px;
   padding: 15vh 5vw 15vh 5vw;
 }
 
@@ -118,11 +123,10 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  width: 85vw;
+  width: 85vw; 
 }
 
 .rec_works_section > h2 {
-  width: 85vw;
   font-family: 'Crete Round' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -138,21 +142,22 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
+  
 }
 
 .vector_line.main {
-  width: 85vw;
   border: 0.5px solid #212121;
 }
 
 .backgrnd_img_main {
   background-image: url('./img/recent_work_bkimg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   align-self: center;
-  height: 237px;
+  height: 237px;  
   width: 85vw;
-  margin-bottom: 8px;
+  margin-bottom: 5%;
+  margin-top: 25%;
 }
 
 .multi_post_stories {
@@ -218,10 +223,10 @@ body {
 
 .rec_proj_btn.main {
   align-self: flex-start;
-  width: 40vw;
+  width: 50vw;
 }
 
-/* Recent works */
+/* RECENT WORK GRID */
 .rec_works_section {
   display: flex;
   flex-flow: column;
@@ -252,7 +257,6 @@ body {
   align-items: center;
   padding: 0;
   margin-top: 0;
-  padding-top: 0;
 }
 
 .rec_skills_list > li {
@@ -267,11 +271,9 @@ body {
   margin-right: 10px;
 }
 
-/* About us */
-
+/* ABOUT US SECTION */
 .about_us_main {
   background: #1c1a19; 
-  /* padding: 15vh 5vw 15vh 5vw; */
   background-image: url("./img/about_us_bckgrnd.png");
   background-repeat: no-repeat;
   background-position: right bottom;  
@@ -391,8 +393,7 @@ body {
 }
 
 
-
-/* contact form */
+/* CONTACT FORM */
 .contact_form {
   display: flex;
   flex-flow: column nowrap;
@@ -513,11 +514,11 @@ footer {
 
 
 
-
 /* DESKTOP MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   /* Desktop adjustments  for header tags */
 
+  /* footer for desktop */
   .footer-decorator {
     display: none;
   }
@@ -536,6 +537,7 @@ footer {
     margin: 10px;
   }
 
+  /* contact form for desktop */
   .contact_form {
     padding: 15vh 5vw 15vh 5vw;
     width: 100vw;
@@ -555,6 +557,8 @@ footer {
     width: 100%;
   }
 
+
+  /* headline and  top navigation bar for destkop */
   .desktop_menu {
     display: flex;
     flex-direction: row;
@@ -610,8 +614,7 @@ footer {
     display: none;
   }
 
-
-  /* Desktop adjustments  for headline */
+  /* Desktop adjustments  for headline alone */
   .headline {
     background: #1c1a19;
     padding: 15vh 10vw 15vh 10vw;
@@ -620,7 +623,6 @@ footer {
     background-size: contain;
     background-position: right top;
   }
-
 
   .headline h1,
   .headline p {
@@ -634,7 +636,7 @@ footer {
   }
 
  
-  /* Work sections */
+  /* Work sections desktop verion */
   .work_sec_headers {
     display: flex;
     width: 85vw;
@@ -783,6 +785,8 @@ footer {
     background-image: url(./img/grid_img_1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1.5px  solid black;
+    width: 100%;
   }
 
   .rec_works_section > p {
@@ -799,7 +803,7 @@ footer {
 
   .rec_proj_btn.proj_1 {
     width: 100%;
-    margin: 0;
+
   }
 
   .rec_skills_list.proj_1 {
@@ -840,8 +844,6 @@ footer {
     margin-bottom: 50px;
   }
   
-
-
 /* SKills sections Desktop Version */
 .work_skills {
   display: grid;
@@ -857,7 +859,6 @@ footer {
  justify-content: flex-start;
 }
 
-
 .about_us_ul {
   justify-content: baseline ;
   align-items: flex-start;
@@ -872,7 +873,6 @@ footer {
 }
 
 }
-
 
 /* Button Interctions */
 button:enabled {
