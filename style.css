@@ -9,16 +9,14 @@
 
 * {
   box-sizing: border-box;
-  }
+}
 
 body {
   padding: 0;
   margin: 0;
 }
 
-
 /* HEADER SECTION OF PAGE */
-
 .top_header {
   width: 100vw;  /* use responsive measurements */
   display: flex;
@@ -27,7 +25,6 @@ body {
   background: #3c3a39;
   padding-left: 5vw;
   padding-right: 5vw;
-
 }
 
 .top_header a {
@@ -47,9 +44,7 @@ body {
   line-height: 24px;
 }
 
-
 /* HEADLINE SECTION OF PAGE  */
-
 .headline {
   width: 100vw;
   padding: 15vh 5vw 15vh 5vw;
@@ -107,8 +102,7 @@ body {
   padding-left: 5vw;
   min-height: 20px;
   margin-bottom: 5vh;
-} 
-
+}
 
 /* WORK  SECTION  MAIN AREA */
 .work_section {
@@ -123,7 +117,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  width: 85vw; 
+  width: 85vw;
 }
 
 .rec_works_section > h2 {
@@ -136,13 +130,23 @@ body {
   margin: 0;
 }
 
+.about_us > h2 {
+  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 0;
+}
+
 .rec_works_section_main > div > h2 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  
 }
 
 .vector_line.main {
@@ -154,7 +158,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   align-self: center;
-  height: 237px;  
+  height: 237px;
   width: 85vw;
   margin-bottom: 5%;
   margin-top: 25%;
@@ -273,15 +277,14 @@ body {
 
 /* ABOUT US SECTION */
 .about_us_main {
-  background: #1c1a19; 
+  background: #1c1a19;
   background-image: url("./img/about_us_bckgrnd.png");
   background-repeat: no-repeat;
-  background-position: right bottom;  
-  margin: 0px;
-
+  background-position: right bottom;
+  margin: 0;
 }
 
-.about_us  {
+.about_us {
   display: flex;
   padding: 15vh 5vw 15vh 5vw;
   flex-direction: column;
@@ -289,25 +292,13 @@ body {
   justify-content: flex-start;
 }
 
-.about_us > h2 {
-  font-family: 'Crete Round' Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  margin: 0;
-}
-
-.about_us  >  p  {
+.about_us > p {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-
 }
 
 .about_us > p:nth-child(3) {
@@ -315,7 +306,7 @@ body {
 }
 
 .about_us_btn {
-  width: auto; 
+  width: auto;
   align-self: flex-start;
   margin-bottom: 50px;
 }
@@ -323,9 +314,8 @@ body {
 .vector_line_about_us {
   width: 100%;
   border: 1px solid #fff;
-  background: #1C1A19; 
+  background: #1c1a19;
 }
-
 
 /* Work skills , language and framework */
 .work_skills {
@@ -335,7 +325,6 @@ body {
   background: #1c1a19;
   justify-content: center;
   align-items: center;
-  
 }
 
 .about_us_headers_grp {
@@ -391,7 +380,6 @@ body {
   text-align: center;
   color: #fff;
 }
-
 
 /* CONTACT FORM */
 .contact_form {
@@ -478,7 +466,6 @@ textarea::placeholder {
   color: #172b4d;
 }
 
-
 footer {
   width: 100vw;
   display: flex;
@@ -486,9 +473,9 @@ footer {
   align-items: center;
 }
 
-.vector_line_footer {  
+.vector_line_footer {
   width: 100%;
-  border: 1px solid  #DFE1E6;;
+  border: 1px solid  #dfe1e6;
 }
 
 .footer > ul {
@@ -496,12 +483,11 @@ footer {
   flex-direction: row;
   justify-content: flex-start;
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   padding-inline-start: 0;
   align-items: baseline;
 }
-
 
 .footer-decorator {
   width: 40vw;
@@ -511,8 +497,6 @@ footer {
   margin-bottom: 50px;
   border-radius: 21px;
 }
-
-
 
 /* DESKTOP MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
@@ -532,7 +516,6 @@ footer {
     align-self: flex-start;
   }
 
-
   .socials.headlines {
     margin: 10px;
   }
@@ -544,19 +527,19 @@ footer {
     flex-direction: row;
   }
 
-  .contact_form >p {
+  .contact_form > p {
     width: 45%;
     font-size: 40px;
     line-height: 52px;
     color: #262626;
     text-align: left;
-
   }
 
-  input, label,textarea {
+  input,
+  label,
+  textarea {
     width: 100%;
   }
-
 
   /* headline and  top navigation bar for destkop */
   .desktop_menu {
@@ -635,7 +618,6 @@ footer {
     left: 0%;
   }
 
- 
   /* Work sections desktop verion */
   .work_sec_headers {
     display: flex;
@@ -803,7 +785,6 @@ footer {
 
   .rec_proj_btn.proj_1 {
     width: 100%;
-
   }
 
   .rec_skills_list.proj_1 {
@@ -811,17 +792,17 @@ footer {
   }
 
   /* About us desktop version */
-.about_us_main {
-  background-image: url("./img/desktop_boutus.png");
-  background-position: right center;  
-}
+  .about_us_main {
+    background-image: url("./img/desktop_boutus.png");
+    background-position: right center;
+  }
 
-  .about_us  {
+  .about_us {
     width: 50%;
     background-image: none;
   }
-  
-  .about_us > p  {
+
+  .about_us > p {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -831,7 +812,7 @@ footer {
   }
 
   .about_us > p:nth-child(3) {
-    display:block;
+    display: block;
   }
 
   .about_us > p:nth-child(2) {
@@ -839,39 +820,37 @@ footer {
   }
 
   .about_us_btn {
-    width: auto; 
+    width: auto;
     align-self: flex-start;
     margin-bottom: 50px;
   }
-  
-/* SKills sections Desktop Version */
-.work_skills {
-  display: grid;
-  padding: 15vh 5vw 15vh 5vw; 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  column-gap: 100px  ;
-  align-items:  flex-start;
-}
 
-.about_us_headers_grp {
- align-items: baseline;
- justify-content: flex-start;
-}
+  /* SKills sections Desktop Version */
+  .work_skills {
+    display: grid;
+    padding: 15vh 5vw 15vh 5vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 100px;
+    align-items: flex-start;
+  }
 
-.about_us_ul {
-  justify-content: baseline ;
-  align-items: flex-start;
-  margin: 0px;
+  .about_us_headers_grp {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
 
-}
+  .about_us_ul {
+    justify-content: baseline;
+    align-items: flex-start;
+    margin: 0;
+  }
 
-.about_us_ul.language,
-.about_us_ul.framework,
-.about_us_ul.skills {
-  grid-row: 2 / 2;
-}
-
+  .about_us_ul.language,
+  .about_us_ul.framework,
+  .about_us_ul.skills {
+    grid-row: 2 / 2;
+  }
 }
 
 /* Button Interctions */
@@ -895,4 +874,3 @@ button:disabled {
   color: #5b5957;
   background: #f4f1f0;
 }
-
