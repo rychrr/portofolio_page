@@ -6,12 +6,13 @@
 
 * {
   box-sizing: border-box;
-}
+  }
 
 body {
   padding: 0;
   margin: 0;
 }
+
 
 /* Header secion of Page */
 .top_header {
@@ -63,8 +64,8 @@ body {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .intro_2 {
@@ -74,8 +75,8 @@ body {
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 .intro_3 {
@@ -85,7 +86,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  width: 85vw;
 }
 
 .social_media_list {
@@ -143,7 +143,6 @@ body {
 .vector_line.main {
   width: 85vw;
   border: 0.5px solid #212121;
-  margin-bottom: 100px;
 }
 
 .backgrnd_img_main {
@@ -272,13 +271,13 @@ body {
 
 .about_us_main {
   background: #1c1a19; 
+  /* padding: 15vh 5vw 15vh 5vw; */
   background-image: url("./img/about_us_bckgrnd.png");
   background-repeat: no-repeat;
   background-position: right bottom;  
   margin: 0px;
 
 }
-
 
 .about_us  {
   display: flex;
@@ -306,7 +305,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #f4f5f7;
-  border: solid gold;
 
 }
 
@@ -320,15 +318,14 @@ body {
   margin-bottom: 50px;
 }
 
-.vector-line {
+.vector_line_about_us {
   width: 100%;
   border: 1px solid #fff;
-  margin: 0px;  
+  background: #1C1A19; 
 }
 
 
 /* Work skills , language and framework */
-
 .work_skills {
   display: flex;
   padding: 100px 24px 100px 24px;
@@ -336,7 +333,6 @@ body {
   background: #1c1a19;
   justify-content: center;
   align-items: center;
-  border: solid gold;
   
 }
 
@@ -347,7 +343,6 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  border: solid gold;
 }
 
 .bullet_icons {
@@ -380,7 +375,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid gold;
   padding: 10px;
 }
 
@@ -395,8 +389,6 @@ body {
   text-align: center;
   color: #fff;
 }
-
-
 
 
 
@@ -485,12 +477,82 @@ textarea::placeholder {
   color: #172b4d;
 }
 
+
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vector_line_footer {  
+  width: 100%;
+  border: 1px solid  #DFE1E6;;
+}
+
+.footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  padding-inline-start: 0;
+  align-items: baseline;
+}
+
+
+.footer-decorator {
+  width: 40vw;
+  align-self: center;
+  background-color: #0d151e;
+  height: 7px;
+  margin-bottom: 50px;
+  border-radius: 21px;
+}
+
+
+
+
 /* DESKTOP MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   /* Desktop adjustments  for header tags */
-  .contact_form > p {
-    display: block;
-    float: right;
+
+  .footer-decorator {
+    display: none;
+  }
+
+  .footer > ul {
+    margin-right: 10%;
+  }
+
+  .socials.footer {
+    padding: 5px;
+    align-self: flex-start;
+  }
+
+
+  .socials.headlines {
+    margin: 10px;
+  }
+
+  .contact_form {
+    padding: 15vh 5vw 15vh 5vw;
+    width: 100vw;
+    flex-direction: row;
+  }
+
+  .contact_form >p {
+    width: 45%;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
+
+  }
+
+  input, label,textarea {
+    width: 100%;
   }
 
   .desktop_menu {
@@ -548,6 +610,7 @@ textarea::placeholder {
     display: none;
   }
 
+
   /* Desktop adjustments  for headline */
   .headline {
     background: #1c1a19;
@@ -557,6 +620,7 @@ textarea::placeholder {
     background-size: contain;
     background-position: right top;
   }
+
 
   .headline h1,
   .headline p {
@@ -569,10 +633,7 @@ textarea::placeholder {
     left: 0%;
   }
 
-  .socials {
-    margin: 10px;
-  }
-
+ 
   /* Work sections */
   .work_sec_headers {
     display: flex;
@@ -763,7 +824,6 @@ textarea::placeholder {
     font-size: 20px;
     line-height: 32px;
     color: #f4f5f7;
-    border: solid gold;
   }
 
   .about_us > p:nth-child(3) {
@@ -780,69 +840,36 @@ textarea::placeholder {
     margin-bottom: 50px;
   }
   
-  .vector-line {
-    width: auto ;
-    border: 1px solid #fff;
-    margin: 0px;  
-  }
 
 
 /* SKills sections Desktop Version */
 .work_skills {
   display: grid;
-  padding: 15vh 5vw 15vh 5vw;
+  padding: 15vh 5vw 15vh 5vw; 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
-  gap: 10px;
+  column-gap: 100px  ;
+  align-items:  flex-start;
 }
 
 .about_us_headers_grp {
  align-items: baseline;
  justify-content: flex-start;
- margin: 0px;
 }
+
 
 .about_us_ul {
   justify-content: baseline ;
   align-items: flex-start;
   margin: 0px;
-}
-
-.about_us_headers_grp:nth-child(1),
-.about_us_headers_grp:nth-child(2),
-.about_us_headers_grp:nth-child(5) {
-  grid-row: 1 / 2;
-}
-
-.about_us_ul.language{
-  margin: 0px;
 
 }
 
 .about_us_ul.language,
-.about_us_ul.skills:nth-child(1),
-.about_us_ul.skills:nth-child(2 ) {
-  grid-row: 2 / 3;
+.about_us_ul.framework,
+.about_us_ul.skills {
+  grid-row: 2 / 2;
 }
-
-.about_us_headers_grp:nth-child(1),
-.about_us_ul.language {
-  grid-column: 1 / 2;
-}
-
-.about_us_headers_grp:nth-child(2),
-.about_us_ul.skills:nth-child(1) {
-  grid-column: 2 / 3;
-}
-
-.about_us_headers_grp:nth-child(5),
-.about_us_ul.skills:nth-child(2) {
-  grid-column: 3 / 4;
-}
-
-
-
-
 
 }
 
@@ -869,30 +896,3 @@ button:disabled {
   background: #f4f1f0;
 }
 
-
-footer {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style: none;
-  padding-inline-start: 0;
-  height: 66px;
-  align-items: baseline;
-}
-
-
-.footer-decorator {
-  width: 40vw;
-  align-self: center;
-  background-color: #0d151e;
-  height: 7px;
-  margin-bottom: 50px;
-  border-radius: 21px;
-}
