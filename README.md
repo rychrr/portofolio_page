@@ -61,7 +61,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Live demo comming soon 
+- [rychrr portfolio page](https://rychrr.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,11 +109,9 @@ To run the project, execute the following command:
 
 ### Deployment <a name="#triangular_flag_on_post-deployment"> </a>
 
-The project is deployed on github pages:
-- [rychrr portfolio page](https://rychrr.github.io/)
-
-how to deploy to github pages 
--  see [HERE](https://www.w3schools.com/git/git_remote_pages.asp?remote=github)
+You can deploy this project by:
+-  Copying the project files to the deploynennt environment
+-  Running the index.html
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
