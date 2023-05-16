@@ -25,6 +25,7 @@ body {
   background: #3c3a39;
   padding-left: 5vw;
   padding-right: 5vw;
+  position: fixed;
 }
 
 .top_header a {
