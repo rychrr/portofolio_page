@@ -426,7 +426,7 @@ textarea {
   width: 75vw;
   border: none;
   background: #fbf8f7;
-  padding: 20px;
+  padding: 10px;
 }
 
 textarea::placeholder {
@@ -533,13 +533,19 @@ footer {
     font-size: 40px;
     line-height: 52px;
     color: #262626;
-    text-align: left;
+    text-align: left;  
   }
-
+ 
   input,
   label,
   textarea {
     width: 100%;
+  }
+
+
+  .contact_form button {
+    align-self: flex-start;
+    width: 20%;
   }
 
   /* headline and  top navigation bar for destkop */
