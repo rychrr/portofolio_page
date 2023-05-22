@@ -533,15 +533,14 @@ footer {
     font-size: 40px;
     line-height: 52px;
     color: #262626;
-    text-align: left;  
+    text-align: left;
   }
- 
+
   input,
   label,
   textarea {
     width: 100%;
   }
-
 
   .contact_form button {
     align-self: flex-start;
