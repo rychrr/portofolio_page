@@ -16,8 +16,6 @@ body {
   margin: 0;
 }
 
-
-
 .mobile_menu_main {
   display: flex;
   flex-direction: column;
@@ -27,7 +25,6 @@ body {
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   height: 100vh;
   width: 100vw;
-  /* border: solid gold; */
 }
 
 .mobile_menu_ul {
@@ -54,9 +51,7 @@ body {
   position: relative;
   top:80%;
   left:30%;  
-
 }
-
 
 .x_button {
   align-self: flex-end;
@@ -80,10 +75,9 @@ body {
   margin-bottom: 5vw;
 }
 
-
-
-
-
+.mobile_menu_main {
+  display: none;
+}
 
 /* HEADER SECTION OF PAGE */
 .top_header {
@@ -95,7 +89,7 @@ body {
   background: #3c3a39;
   padding-left: 5vw;
   padding-right: 5vw;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .top_header a {
@@ -574,7 +568,7 @@ footer {
 @media only screen and (min-width: 768px) {
 
   /* Desktop adjustments  for header tags */
-  .mobile_menu {
+  .mobile_menu_main {
     display: none;
   }
 
@@ -956,4 +950,9 @@ button:active {
 button:disabled {
   color: #5b5957;
   background: #f4f1f0;
+}
+
+/* adjusted based on JS interactions; */
+.top_header.hide, main.hide, footer.hide {
+  display: none;
 }

@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Richard Portfolio Page</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="./index.js" defer></script>
 </head>
-
 <body>
+
+    <!-- Nav menu for mobile version only  -->
+    <nav class="mobile_menu_main">
+      <div>
+      <ul class="mobile_menu_ul">
+        <li class="x_button" id="x_button"><a href="#"> X</a> </li>
+        <li><a href="#portfolio">Portoflio</a></li>
+        <li class="vector_line_mob"> </li>
+        <li> <a href="#about_us">About</a> </li>  
+        <li class="vector_line_mob"> </li>
+        <li > <a href="#contact_us">Contact</a> </li>
+        <li class="vector_line_mob"> </li>
+      </ul>
+    </div>
+      <div class="vector_line_mfot">
+        <div class="vector_line_solid"></div>
+      </div>
+    </nav>
 
   <!-- HEADER SECTION -->
   <header class="top_header">
@@ -18,8 +35,8 @@
       <h3>Richard</h3>
     </a>
     <nav class="top_nav">
-      <a href="#" id="menubar"><img src="./img/hamburger.png" alt="menu bar" /></a>
-
+      <a href="#" id='menubar'><img src="./img/hamburger.png" alt="menu bar" /></a>
+      
       <!-- Nav bar for desktop versions -->
       <div class="desktop_menu">
         <a href="#">Portoflio</a>
@@ -29,26 +46,6 @@
       </div>
     </nav>
   </header>
-
-
-      <!-- Nav menu for mobile version only  -->
-      <nav class="mobile_menu_main">
-        <div>
-        <ul class="mobile_menu_ul">
-          <li class="x_button" id="x_button"><a href="#"> X</a> </li>
-          <li><a href="#portfolio">Portoflio</a></li>
-          <li class="vector_line_mob"> </li>
-          <li> <a href="#about_us">About</a> </li>  
-          <li class="vector_line_mob"> </li>
-          <li > <a href="#contact_us">Contact</a> </li>
-          <li class="vector_line_mob"> </li>
-        </ul>
-      </div>
-        <div class="vector_line_mfot">
-          <div class="vector_line_solid"></div>
-        </div>
-      </nav>
-
 
   <!-- MAIN CONTAINER   -->
   <main class="main container">
@@ -86,8 +83,6 @@
         </li>
       </ul>
     </section>
-
-
 
     <!-- WORK SECTIONS -->
     <section class="work_section" id="portfolio">
