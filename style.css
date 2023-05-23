@@ -16,16 +16,86 @@ body {
   margin: 0;
 }
 
+
+
+.mobile_menu_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #3C3A39;
+  mix-blend-mode: normal;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  height: 100vh;
+  width: 100vw;
+  /* border: solid gold; */
+}
+
+.mobile_menu_ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 90%;
+}
+
+.vector_line_mfot {
+  background: white;
+  width: 100vw;
+  height: 10%;
+}
+
+.vector_line_solid {
+  width: 40vw;
+  height: 5px;
+  background: black;
+  position: relative;
+  top:80%;
+  left:30%;  
+
+}
+
+
+.x_button {
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.mobile_menu_ul > li > a {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFF5E1;
+}
+
+.vector_line_mob {
+  background: #6F6C6B;
+  height: 1px;
+  width: 85vw;
+  margin-bottom: 5vw;
+}
+
+
+
+
+
+
 /* HEADER SECTION OF PAGE */
 .top_header {
-  width: 100vw;  /* use responsive measurements */
+  width: 100vw;
+  /* use responsive measurements */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #3c3a39;
   padding-left: 5vw;
   padding-right: 5vw;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .top_header a {
@@ -34,10 +104,11 @@ body {
 }
 
 .desktop_menu {
-  display: none; /* Hide menu for screensize abv 765px */
+  display: none;
+  /* Hide menu for screensize abv 765px */
 }
 
-.top_nav > h3 {
+.top_nav>h3 {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -58,7 +129,7 @@ body {
   background-position: right bottom;
 }
 
-.headline > h1 {
+.headline>h1 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -121,7 +192,7 @@ body {
   width: 85vw;
 }
 
-.rec_works_section > h2 {
+.rec_works_section>h2 {
   font-family: 'Crete Round' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -131,7 +202,7 @@ body {
   margin: 0;
 }
 
-.about_us > h2 {
+.about_us>h2 {
   font-family: 'Crete Round' Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -142,7 +213,7 @@ body {
   margin: 0;
 }
 
-.rec_works_section_main > div > h2 {
+.rec_works_section_main>div>h2 {
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -177,7 +248,7 @@ body {
   padding: 0;
 }
 
-.multipost_card > p {
+.multipost_card>p {
   width: 85vw;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -198,7 +269,7 @@ body {
   width: 85vw;
 }
 
-.rec_skills_list_main > li {
+.rec_skills_list_main>li {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -243,7 +314,7 @@ body {
   background-size: cover;
 }
 
-.rec_works_section > p {
+.rec_works_section>p {
   width: 85vw;
   font-family: 'Inter' Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -264,7 +335,7 @@ body {
   margin-top: 0;
 }
 
-.rec_skills_list > li {
+.rec_skills_list>li {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -293,7 +364,7 @@ body {
   justify-content: flex-start;
 }
 
-.about_us > p {
+.about_us>p {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -302,7 +373,7 @@ body {
   color: #f4f5f7;
 }
 
-.about_us > p:nth-child(3) {
+.about_us>p:nth-child(3) {
   display: none;
 }
 
@@ -476,10 +547,10 @@ footer {
 
 .vector_line_footer {
   width: 100%;
-  border: 1px solid  #dfe1e6;
+  border: 1px solid #dfe1e6;
 }
 
-.footer > ul {
+.footer>ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -501,14 +572,20 @@ footer {
 
 /* DESKTOP MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
+
   /* Desktop adjustments  for header tags */
+  .mobile_menu {
+    display: none;
+  }
+
+  /* stylelint-disable-next-line no-eol-whitespace */
 
   /* footer for desktop */
   .footer-decorator {
     display: none;
   }
 
-  .footer > ul {
+  .footer>ul {
     margin-right: 10%;
   }
 
@@ -528,7 +605,7 @@ footer {
     flex-direction: row;
   }
 
-  .contact_form > p {
+  .contact_form>p {
     width: 45%;
     font-size: 40px;
     line-height: 52px;
@@ -562,7 +639,7 @@ footer {
     color: #fff;
   }
 
-  .top_nav > h3 {
+  .top_nav>h3 {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-size: 20px;
@@ -570,7 +647,7 @@ footer {
     text-align: center;
   }
 
-  .headline > h1 {
+  .headline>h1 {
     font-size: 72px;
     line-height: 82px;
   }
@@ -590,7 +667,7 @@ footer {
     line-height: 32px;
   }
 
-  .desktop_menu > a {
+  .desktop_menu>a {
     padding: 5%;
   }
 
@@ -634,7 +711,7 @@ footer {
     padding: 0;
   }
 
-  .work_sec_headers > h2 {
+  .work_sec_headers>h2 {
     color: #091e42;
   }
 
@@ -671,14 +748,14 @@ footer {
     padding-left: 10px;
   }
 
-  .multipost_card > p {
+  .multipost_card>p {
     width: auto;
     font-size: 20px;
     line-height: 28px;
     color: #091e42;
   }
 
-  .multipost_card > h2 {
+  .multipost_card>h2 {
     width: auto;
     font-size: 40px;
     line-height: 52px;
@@ -692,14 +769,14 @@ footer {
     padding: 5px;
   }
 
-  .rec_skills_list_main > li {
+  .rec_skills_list_main>li {
     width: auto;
     margin-left: 0;
     margin-right: 10px;
     padding: 10px;
   }
 
-  .rec_skills_list_main > li:nth-child(3) {
+  .rec_skills_list_main>li:nth-child(3) {
     flex-grow: 2;
   }
 
@@ -725,7 +802,7 @@ footer {
     padding: 20px;
   }
 
-  .rec_works_section > h2 {
+  .rec_works_section>h2 {
     width: auto;
     margin: 0;
     padding-bottom: 5px;
@@ -773,11 +850,11 @@ footer {
     background-image: url(./img/grid_img_1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1.5px  solid black;
+    border: 1.5px solid black;
     width: 100%;
   }
 
-  .rec_works_section > p {
+  .rec_works_section>p {
     width: auto;
     font-size: 17px;
     line-height: 24px;
@@ -808,7 +885,7 @@ footer {
     background-image: none;
   }
 
-  .about_us > p {
+  .about_us>p {
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -817,11 +894,11 @@ footer {
     color: #f4f5f7;
   }
 
-  .about_us > p:nth-child(3) {
+  .about_us>p:nth-child(3) {
     display: block;
   }
 
-  .about_us > p:nth-child(2) {
+  .about_us>p:nth-child(2) {
     display: none;
   }
 
