@@ -1,8 +1,12 @@
 const hamburgerIcon = document.getElementById('menubar');
 const mobileMenu = document.querySelector('.mobile_menu_main');
 const closeButton = document.getElementById('x_button');
+//
+// ".headline,.work_section,.about_us_main,.work_skills,.contact_form,.footer"
 const hidePages = document.querySelectorAll('.top_header, .main, .footer');
 const menuOptions = document.querySelectorAll('.mobile_menu_ul > li');
+
+mobileMenu.style.display = 'none';
 
 function toggleHideClass(listHides) {
   listHides.forEach((hidePage) => {
