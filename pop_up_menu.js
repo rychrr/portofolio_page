@@ -149,17 +149,36 @@ const workSection3 = document.querySelector('.rec_works_section.proj_3');
 const workSection4 = document.querySelector('.rec_works_section.proj_4');
 const workSection5 = document.querySelector('.rec_works_section.proj_5');
 const workSection6 = document.querySelector('.rec_works_section.proj_6');
+const parentTarget = document.getElementById('portfolio');
+const firstChildTarget = document.querySelector('.rec_works_section_main');
+const closePopUp = document.querySelector('.pop_menu_cls_icon');
+const menuPopUp = document.querySelector('.pop_up_menu');
 
+closePopUp.addEventListener('click', () => {
+  menuPopUp.style.display = 'none';
+});
 
+workSection1.addEventListener('click', () => {
+// Insert the popUpMenus[0] section after the reference section
+  parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+});
 
+workSection2.addEventListener('click', () => {
+  parentTarget.insertBefore(popUpMenus[1], firstChildTarget.nextElementSibling);
+});
 
-// console.log(popUpMenus);
+workSection3.addEventListener('click', () => {
+  parentTarget.insertBefore(popUpMenus[2], firstChildTarget.nextElementSibling);
+});
 
-// // Select the target location where you want to insert the section
-// const targetContainer = document.querySelector('#target-container');
+workSection4.addEventListener('click', () => {
+  parentTarget.insertBefore(popUpMenus[3], firstChildTarget.nextElementSibling);
+});
 
-// // Select the desired pop_up_menu section from the popUpMenus array
-// const selectedSection = popUpMenus[0]; // Change the index to select the desired section
+workSection5.addEventListener('click', () => {
+  parentTarget.insertBefore(popUpMenus[4], firstChildTarget.nextElementSibling);
+});
 
-// // Insert the selected section into the target location
-// targetContainer.appendChild(selectedSection);
+workSection6.addEventListener('click', () => {
+  parentTarget.insertBefore(popUpMenus[5], firstChildTarget.nextElementSibling);
+});
