@@ -270,11 +270,9 @@ body {
   text-decoration: none;
 }
 
-
 .pop_menu_buttons a:nth-child(2) {
   margin-left: 20px;
 }
-
 
 .work_section {
   display: grid;
@@ -301,8 +299,6 @@ body {
   margin: 0;
   padding-left: 10px;
 }
-
-
 
 
 .about_us > h2 {

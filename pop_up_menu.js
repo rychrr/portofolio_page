@@ -1,19 +1,11 @@
-// createPopUpMenu (
-//     nameText,
-//     skills,
-//     featuredImage,
-//     descriptionText
-//     linkSource
-//     liveVersion
-
-// )
-
 // Build function to receive
 function createPopUpMenu(
   titleText,
   listItems,
   imageSrc,
   descriptionText,
+  linkSource,
+  liveVersion,
 ) {
   const section = document.createElement('section');
   section.classList.add('pop_up_menu');
@@ -64,8 +56,9 @@ function createPopUpMenu(
   const buttonsDiv = document.createElement('div');
   buttonsDiv.classList.add('pop_menu_buttons');
 
-  const button1 = document.createElement('button');
+  const button1 = document.createElement('a');
   button1.classList.add('pop_menu_btn');
+  button1.setAttribute('href', liveVersion);
   const span1 = document.createElement('span');
 
   const img1 = document.createElement('img');
@@ -74,8 +67,9 @@ function createPopUpMenu(
   button1.appendChild(img1);
   buttonsDiv.appendChild(button1);
 
-  const button2 = document.createElement('button');
+  const button2 = document.createElement('a');
   button2.classList.add('pop_menu_btn');
+  button2.setAttribute('href', linkSource);
   const span2 = document.createElement('span');
   const img2 = document.createElement('img');
   img2.alt = 'github logo';
@@ -90,40 +84,82 @@ function createPopUpMenu(
   return section;
 }
 
-const workLinkArr = ['./img/grid_img_1.png',
-  './img/grid_img_2.png',
-  './img/grid_img_3.png',
-  './img/grid_img_4.png',
-  './img/grid_img_5.png',
-  './img/grid_img_6.png'];
+function extractDataFromSections() {
+  const workLinkArr = [
+    './img/grid_img_1.png',
+    './img/grid_img_2.png',
+    './img/grid_img_3.png',
+    './img/grid_img_4.png',
+    './img/grid_img_5.png',
+    './img/grid_img_6.png',
+  ];
 
-//   Search  for rec_works_setions class in  the html
-const sections = document.querySelectorAll('.rec_works_section');
-const extractedData = [];
+  const sections = document.querySelectorAll('.rec_works_section');
+  const extractedData = [];
 
-sections.forEach((section) => {
-  const data = {};
-  const name = section.querySelector('.rec_works_header');
-  const description = section.querySelector('.recent_work_desc');
-  const technologies = section.querySelectorAll('.rec_skills_list li');
+  sections.forEach((section) => {
+    const data = {};
+    const name = section.querySelector('.rec_works_header');
+    const description = section.querySelector('.recent_work_desc');
+    const technologies = section.querySelectorAll('.rec_skills_list li');
 
-  // Extract details within the tag and store in the object
-  data.nameText = name.textContent;
-  data.descriptionText = description.textContent;
-  data.skills = [];
-  technologies.forEach((skill) => {
-    data.skills.push(skill.textContent);
+    // Extract details within the tag and store in the object
+    data.nameText = name.textContent;
+    data.descriptionText = description.textContent;
+    data.skills = [];
+    technologies.forEach((skill) => {
+      data.skills.push(skill.textContent);
+    });
+    data.liveVersion = 'https://rychrr.github.io/';
+    data.linkSource = 'https://github.com/rychrr/portofolio_page';
+
+    // Push the object into the array
+    extractedData.push(data);
   });
-  data.liveVersion = 'https://rychrr.github.io/';
-  data.linkSource = 'https://github.com/rychrr/portofolio_page';
 
-  // Push the object into the array
-  extractedData.push(data);
+  extractedData.forEach((item, index) => {
+    const workLinkIndex = index % workLinkArr.length;
+    item.featuredImage = workLinkArr[workLinkIndex];
+  });
+
+  return extractedData;
+}
+
+// Get Array  of List
+const extractedData = extractDataFromSections();
+const popUpMenus = [];
+
+extractedData.forEach((item) => {
+  const popUpMenu = createPopUpMenu(
+    item.nameText,
+    item.skills,
+    item.featuredImage,
+    item.descriptionText,
+    item.linkSource,
+    item.liveVersion,
+  );
+
+  popUpMenus.push(popUpMenu);
 });
 
-extractedData.forEach((item, index) => {
-  const workLinkIndex = index % workLinkArr.length;
-  item.featuredImage = workLinkArr[workLinkIndex];
-});
+// Select the section element
+const workSection1 = document.querySelector('.rec_works_section.proj_1');
+const workSection2 = document.querySelector('.rec_works_section.proj_2');
+const workSection3 = document.querySelector('.rec_works_section.proj_3');
+const workSection4 = document.querySelector('.rec_works_section.proj_4');
+const workSection5 = document.querySelector('.rec_works_section.proj_5');
+const workSection6 = document.querySelector('.rec_works_section.proj_6');
 
-console.log(extractedData);
+
+
+
+// console.log(popUpMenus);
+
+// // Select the target location where you want to insert the section
+// const targetContainer = document.querySelector('#target-container');
+
+// // Select the desired pop_up_menu section from the popUpMenus array
+// const selectedSection = popUpMenus[0]; // Change the index to select the desired section
+
+// // Insert the selected section into the target location
+// targetContainer.appendChild(selectedSection);
