@@ -7,19 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Richard Portfolio Page</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
 
+  <!-- Nav menu for mobile version only  -->
+  <nav class="mobile_menu_main">
+    <div>
+      <ul class="mobile_menu_ul">
+        <li class="x_button" id="x_button"><a href="#"> X</a> </li>
+        <li><a href="#portfolio">Portoflio</a></li>
+        <li class="vector_line_mob"> </li>
+        <li> <a href="#about_us">About</a> </li>
+        <li class="vector_line_mob"> </li>
+        <li> <a href="#contact_us">Contact</a> </li>
+        <li class="vector_line_mob"> </li>
+      </ul>
+    </div>
+    <div class="vector_line_mfot">
+      <div class="vector_line_solid"></div>
+    </div>
+  </nav>
+
   <!-- HEADER SECTION -->
   <header class="top_header">
-
     <!-- nav menu bars -->
     <a href="#">
       <h3>Richard</h3>
     </a>
     <nav class="top_nav">
-      <a href="#" id="menubar"><img src="./img/hamburger.png" alt="menu bar" /></a>
+      <a href="#" id='menubar'><img src="./img/hamburger.png" alt="menu bar" /></a>
 
       <!-- Nav bar for desktop versions -->
       <div class="desktop_menu">
@@ -32,10 +50,8 @@
   </header>
 
   <!-- MAIN CONTAINER   -->
-  <main class="main_container">
-
+  <main class="main container">
     <!-- headline Section -->
-
     <section class="headline">
       <h1> Hey There. I’m Richard.</h1>
       <p class="intro_2">I'm a Software Developer</p>
@@ -53,11 +69,13 @@
         </li>
         <li>
           <a href="#">
-            <img src="./img/social_media_logo/linkedin.png" alt="linkedin_icon" class="socials headlines linkedin" /></a>
+            <img src="./img/social_media_logo/linkedin.png" alt="linkedin_icon"
+              class="socials headlines linkedin" /></a>
         </li>
         <li>
           <a href="#">
-            <img src="./img/social_media_logo/angel_list.png" alt="angellist_icon" class="socials headlines angelist" /></a>
+            <img src="./img/social_media_logo/angel_list.png" alt="angellist_icon"
+              class="socials headlines angelist" /></a>
         </li>
         <li>
           <a href="#">
@@ -70,9 +88,9 @@
       </ul>
     </section>
 
-    <!-- WORK SECTIONS -->
-    <section class="work_section">
 
+    <!-- WORK SECTIONS -->
+    <section class="work_section" id="portfolio">
       <section class="rec_works_section_main">
         <div class="work_sec_headers">
           <h2>My Recent Works</h2>
@@ -95,7 +113,7 @@
               <li class="flex_1">Bootstrap</li>
               <li>Ruby</li>
             </ul>
-            <button class="rec_proj_btn main">See project</button>
+            <button type="button" class="rec_proj_btn main">See project</button>
           </div>
         </div>
       </section>
@@ -111,7 +129,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button class="rec_proj_btn proj_1">See project</button>
+          <button type="button" class="rec_proj_btn proj_1">See project</button>
         </section>
 
         <!-- recent project 2 -->
@@ -126,7 +144,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button class="rec_proj_btn proj_2">See project</button>
+          <button type="button" class="rec_proj_btn proj_2">See project</button>
         </section>
 
         <!-- recent project 3 -->
@@ -141,7 +159,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button class="rec_proj_btn proj_3">See project</button>
+          <button type="button" class="rec_proj_btn proj_3">See project</button>
         </section>
 
         <!-- recent project 4 -->
@@ -156,7 +174,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button class="rec_proj_btn proj_4">See project</button>
+          <button type="button" class="rec_proj_btn proj_4">See project</button>
         </section>
 
         <!-- recent project 5 -->
@@ -171,7 +189,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button class="rec_proj_btn proj_5">See project</button>
+          <button type="button" class="rec_proj_btn proj_5">See project</button>
         </section>
 
         <!-- recent project 6 -->
@@ -186,7 +204,7 @@
             <li>Bootstrap</li>
             <li>Ruby</li>
           </ul>
-          <button class="rec_proj_btn proj_6">See project</button>
+          <button type="button" class="rec_proj_btn proj_6">See project</button>
         </section>
     </section>
     </div>
@@ -194,7 +212,7 @@
 
     <!-- About us -->
 
-    <section class="about_us_main">
+    <section class="about_us_main" id="about_us">
       <div class="about_us">
         <h2>About me</h2>
         <p>
@@ -209,7 +227,7 @@
           If you like what you see and have a project you need coded, don’t hesitate to contact me.
         </p>
 
-        <button class="about_us_btn">Get my resume</button>
+        <button type="button" class="about_us_btn">Get my resume</button>
 
       </div>
       <div class="vector_line_about_us"></div>
@@ -251,11 +269,8 @@
       </ul>
     </section>
 
-
-
-
     <!-- CONTACT  FORM  -->
-    <section class="contact_form">
+    <section class="contact_form" id="contact_us">
       <p class="form_notes">
         I'm always interested in hearing about new projects, so if you'd like
         to chat please get in touch.
@@ -284,7 +299,8 @@
     <div class="vector_line_footer"></div>
     <ul class="social_media_footer_icons">
       <li><a href="#"><img src="./img/footer-github.png" alt="github_icon" class="socials footer github" /></a></li>
-      <li><a href="#"><img src="./img/footer-linkedin.png" alt="linkedin_icon" class="socials footer linkedin" /></a></li>
+      <li><a href="#"><img src="./img/footer-linkedin.png" alt="linkedin_icon" class="socials footer linkedin" /></a>
+      </li>
       <li><a href="#"><img src="./img/Enabledchill.png" alt="angellist_icon" class="socials footer angelist" /></a></li>
       <li><a href="#"><img src="./img/footer-twitter.png" alt="twitter_icon" class="socials footer twitter" /></a></li>
       <li><a href="#"><img src="./img/footer-medium.png" alt="medium_icon" class="socials footer medium" /></a></li>
@@ -292,4 +308,5 @@
     <div class="footer-decorator"></div>
   </footer>
 </body>
+
 </html>

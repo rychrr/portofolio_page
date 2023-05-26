@@ -16,9 +16,75 @@ body {
   margin: 0;
 }
 
+.mobile_menu_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #3c3a39;
+  mix-blend-mode: normal;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  height: 100vh;
+  width: 100vw;
+}
+
+.mobile_menu_ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 90%;
+}
+
+.vector_line_mfot {
+  background: white;
+  width: 100vw;
+  height: 10%;
+}
+
+.vector_line_solid {
+  width: 40vw;
+  height: 5px;
+  background: black;
+  position: relative;
+  top: 80%;
+  left: 30%;
+}
+
+.x_button {
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.top_header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile_menu_ul > li > a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+}
+
+.vector_line_mob {
+  background: #6f6c6b;
+  height: 1px;
+  width: 85vw;
+  margin-bottom: 5vw;
+}
+
 /* HEADER SECTION OF PAGE */
 .top_header {
-  width: 100vw;  /* use responsive measurements */
+  width: 100vw;
+
+  /* use responsive measurements */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,13 +94,10 @@ body {
   position: fixed;
 }
 
-.top_header a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .desktop_menu {
-  display: none; /* Hide menu for screensize abv 765px */
+  display: none;
+
+  /* Hide menu for screensize abv 765px */
 }
 
 .top_nav > h3 {
@@ -476,7 +539,7 @@ footer {
 
 .vector_line_footer {
   width: 100%;
-  border: 1px solid  #dfe1e6;
+  border: 1px solid #dfe1e6;
 }
 
 .footer > ul {
@@ -502,6 +565,11 @@ footer {
 /* DESKTOP MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
   /* Desktop adjustments  for header tags */
+  .mobile_menu_main {
+    display: none;
+  }
+
+  /* stylelint-disable-next-line no-eol-whitespace */
 
   /* footer for desktop */
   .footer-decorator {
@@ -533,15 +601,14 @@ footer {
     font-size: 40px;
     line-height: 52px;
     color: #262626;
-    text-align: left;  
+    text-align: left;
   }
- 
+
   input,
   label,
   textarea {
     width: 100%;
   }
-
 
   .contact_form button {
     align-self: flex-start;
@@ -774,7 +841,7 @@ footer {
     background-image: url(./img/grid_img_1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1.5px  solid black;
+    border: 1.5px solid black;
     width: 100%;
   }
 
@@ -880,4 +947,11 @@ button:active {
 button:disabled {
   color: #5b5957;
   background: #f4f1f0;
+}
+
+/* adjusted based on JS interactions; */
+.top_header.hide,
+main.hide,
+footer.hide {
+  display: none;
 }
