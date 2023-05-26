@@ -2,7 +2,6 @@
 @import url('https://fonts.cdnfonts.com/css/Roboto');
 @import url('https://fonts.cdnfonts.com/css/poppins');
 @import url('https://fonts.cdnfonts.com/css/Inter');
-@import url('https://fonts.cdnfonts.com/css/InaiMathi');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
 /* SET BODY DDEFAUlt  */
@@ -169,6 +168,114 @@ body {
 }
 
 /* WORK  SECTION  MAIN AREA */
+
+/* Work Pop up Menu */
+.pop_up_menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 15px 15px 20px;
+  background: #FFFFFF;
+  border: 1px solid #EBECF0;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  backdrop-filter: blur(1em);
+}
+
+.pop_up_menu > .pop_menu_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* style the pop up menu header */
+  .pop_menu_title  {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+/* style the close button  */
+.pop_menu_cls_icon  {
+  height: 15px;
+  align-self: center;
+  margin:10px;
+}
+
+.pop_up_menu > ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+
+}
+
+.pop_up_menu > ul > li {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3A39;
+  border: 1px solid #DFE1E6;
+  padding: 10px;  
+  margin-right: 10px;
+} 
+
+
+.pop_menu_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.pop_menu_content_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop_menu_descr {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pop_menu_buttons {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center ;
+
+}
+
+.pop_menu_btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-family: 'Inter';
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  border: none ;
+  background: #FF6B00;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.pop_menu_buttons a:nth-child(2) {
+  margin-left: 20px;
+}
+
+
 .work_section {
   display: grid;
   width: 100vw;
@@ -192,7 +299,11 @@ body {
   line-height: 44px;
   color: #fff;
   margin: 0;
+  padding-left: 10px;
 }
+
+
+
 
 .about_us > h2 {
   font-family: 'Crete Round' Arial, Helvetica, sans-serif;
@@ -299,7 +410,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   height: 52vh;
   background-image: url(./img/prof_art_printing_data.png);
   background-repeat: no-repeat;
@@ -315,6 +426,7 @@ body {
   line-height: 24px;
   color: #fff;
   margin-top: 5px;
+  padding-left: 10px;
 }
 
 .rec_skills_list {
@@ -562,14 +674,82 @@ footer {
   border-radius: 21px;
 }
 
+
+
 /* DESKTOP MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
+
+  .pop_up_menu {
+    width: 85vw;
+    
+  }
+
+ /* Mobile pop up */
+ .pop_menu_title {
+    font-family: 'Crete Round';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+ }
+
+ .pop_menu_content  {
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+ }
+
+ .pop_menu_img  {
+  width: 50%;
+  padding-right: 20px;
+
+ }
+
+ .pop_menu_content_1  {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+ }
+
+ .pop_menu_descr {
+  color: #344563;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  float: right;
+  margin-top: 0px;
+ }
+ 
+ .pop_menu_buttons {
+  width: 50%;
+  justify-content: flex-end;
+
+ }
+
+
+ .pop_up_menu > ul > li {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3C3A39;
+ }
+
+
+
+
+
+
+
   /* Desktop adjustments  for header tags */
   .mobile_menu_main {
     display: none;
   }
 
-  /* stylelint-disable-next-line no-eol-whitespace */
 
   /* footer for desktop */
   .footer-decorator {
@@ -619,7 +799,7 @@ footer {
   .desktop_menu {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -662,11 +842,7 @@ footer {
     padding: 5%;
   }
 
-  .top_header {
-    padding-left: 10vw;
-    padding-right: 10vw;
-  }
-
+ 
   #menubar {
     display: none;
   }
@@ -695,6 +871,7 @@ footer {
   /* Work sections desktop verion */
   .work_sec_headers {
     display: flex;
+    padding: 15vh 10vw 15vh 10vw;
     width: 85vw;
     justify-content: baseline;
     align-items: baseline;
@@ -797,6 +974,7 @@ footer {
     width: auto;
     margin: 0;
     padding-bottom: 5px;
+    
   }
 
   .rec_proj_btn.proj_2,
