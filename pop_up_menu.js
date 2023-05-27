@@ -170,12 +170,6 @@ function removePopup(popupElement) {
   }
 }
 
-// function checkPopup(popupElement) {
-//   if (popupElement) {
-//     popupElement.remove();
-//   }
-// }
-
 // Intereact with DOM and Apply event listeners on the work section
 const workSection1 = document.querySelector('.rec_works_section.proj_1');
 const workSection2 = document.querySelector('.rec_works_section.proj_2');
@@ -195,6 +189,7 @@ workSection1.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
+      workSection1.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -203,12 +198,13 @@ workSection1.addEventListener('click', () => {
 
 workSection2.addEventListener('click', () => {
   if (!isPopupOpen) {
-    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    parentTarget.insertBefore(popUpMenus[1], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
     menuPopUp.scrollIntoView({ behavior: 'smooth' });
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
+      workSection2.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -217,12 +213,13 @@ workSection2.addEventListener('click', () => {
 
 workSection3.addEventListener('click', () => {
   if (!isPopupOpen) {
-    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    parentTarget.insertBefore(popUpMenus[2], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
     menuPopUp.scrollIntoView({ behavior: 'smooth' });
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
+      workSection3.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -231,12 +228,13 @@ workSection3.addEventListener('click', () => {
 
 workSection4.addEventListener('click', () => {
   if (!isPopupOpen) {
-    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    parentTarget.insertBefore(popUpMenus[3], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
     menuPopUp.scrollIntoView({ behavior: 'smooth' });
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
+      workSection4.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -245,12 +243,13 @@ workSection4.addEventListener('click', () => {
 
 workSection5.addEventListener('click', () => {
   if (!isPopupOpen) {
-    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    parentTarget.insertBefore(popUpMenus[4], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
     menuPopUp.scrollIntoView({ behavior: 'smooth' });
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
+      workSection5.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -259,12 +258,13 @@ workSection5.addEventListener('click', () => {
 
 workSection6.addEventListener('click', () => {
   if (!isPopupOpen) {
-    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    parentTarget.insertBefore(popUpMenus[5], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
     menuPopUp.scrollIntoView({ behavior: 'smooth' });
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
+      workSection6.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
