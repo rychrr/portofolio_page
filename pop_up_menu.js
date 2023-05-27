@@ -1,7 +1,5 @@
 // Function to create and add elements to the DOM
-
 function createAndAddElements() {
-  // Create an array of project data
   const projects = [
     {
       header: 'Profesional Art Printing Data More',
@@ -197,7 +195,7 @@ function extractDataFromSections() {
   const extractedData = [];
   sections.forEach((section) => {
     const data = {};
-    const name = section.querySelector('.rec_works_header');
+    const name = section.querySelector('.rec_works_header h2');
     const description = section.querySelector('.recent_work_desc');
     const technologies = section.querySelectorAll('.rec_skills_list li');
 
