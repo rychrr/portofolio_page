@@ -61,7 +61,7 @@ function createPopUpMenu(
   button1.classList.add('pop_menu_btn');
   button1.setAttribute('href', liveVersion);
   const span1 = document.createElement('span');
-  span1.textContent = 'Seee Live';
+  span1.textContent = 'See Live';
   const img1 = document.createElement('img');
   img1.alt = 'See Live';
   img1.src = './img/see_live_icon.png';
@@ -156,7 +156,6 @@ const workSection5 = document.querySelector('.rec_works_section.proj_5');
 const workSection6 = document.querySelector('.rec_works_section.proj_6');
 const parentTarget = document.getElementById('portfolio');
 const firstChildTarget = document.querySelector('.rec_works_section_main');
-
 
 workSection1.addEventListener('click', () => {
   parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
