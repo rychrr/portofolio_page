@@ -167,6 +167,7 @@ body {
   margin-bottom: 5vh;
 }
 
+
 /* WORK  SECTION  MAIN AREA */
 
 /* Work Pop up Menu */
@@ -180,8 +181,11 @@ body {
   background: #FFFFFF;
   border: 1px solid #EBECF0;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  backdrop-filter: blur(1em);
   border: solid gold;
+  backdrop-filter: blur(10px);
+  position: static;
+  top:0%;
+
 }
 
 .pop_menu_img {
