@@ -13,7 +13,7 @@ function submitForm(event) {
   const emailInput = document.getElementById('contact_email');
   const errorMessage = document.getElementById('error_message');
 
-  const email = emailInput.value.trim().toLowerCase();
+  const email = emailInput.value;
 
   if (!validateEmail(email)) {
     // Email validation failed
