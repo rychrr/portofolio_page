@@ -1,96 +1,3 @@
-// Function to create and add elements to the DOM
-
-function createAndAddElements() {
-  // Create an array of project data
-  const projects = [
-    {
-      header: 'Profesional Art Printing Data More',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-      skills: ['HTML', 'Bootstrap', 'Ruby'],
-      projectClass: 'proj_1',
-    },
-    {
-      header: 'Data Dashboard Healthcare',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-      skills: ['HTML', 'Bootstrap', 'Ruby'],
-      projectClass: 'proj_2',
-    },
-    {
-      header: 'Website Portfolio ',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-      skills: ['HTML', 'Bootstrap', 'Ruby'],
-      projectClass: 'proj_3',
-    },
-    {
-      header: 'Profesional Art Printing Data More',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-      skills: ['HTML', 'Bootstrap', 'Ruby'],
-      projectClass: 'proj_4',
-    },
-    {
-      header: 'Data Dashboard Healthcare',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-      skills: ['HTML', 'Bootstrap', 'Ruby'],
-      projectClass: 'proj_5',
-    },
-    {
-      header: 'Website Portfolio ',
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard.',
-      skills: ['HTML', 'Bootstrap', 'Ruby'],
-      projectClass: 'proj_6',
-    },
-  ];
-
-  // Get the container element in the DOM
-  const container = document.querySelector('.grid-container');
-
-  // Iterate over the projects array and create elements for each project
-  projects.forEach((project) => {
-    // Create section element
-    const section = document.createElement('section');
-    section.className = `rec_works_section ${project.projectClass}`;
-
-    // Create h2 element for header
-    const header = document.createElement('h2');
-    header.className = `rec_works_header ${project.projectClass}`;
-    header.textContent = project.header;
-
-    // Create p element for description
-    const description = document.createElement('p');
-    description.className = `recent_work_desc ${project.projectClass}`;
-    description.textContent = project.description;
-
-    // Create ul element for skills
-    const skillsList = document.createElement('ul');
-    skillsList.className = `rec_skills_list ${project.projectClass}`;
-
-    // Create li elements for each skill
-    project.skills.forEach((skill) => {
-      const skillItem = document.createElement('li');
-      skillItem.textContent = skill;
-      skillsList.appendChild(skillItem);
-    });
-
-    // Create button element
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = `rec_proj_btn ${project.projectClass}`;
-    button.textContent = 'See project';
-
-    // Append all elements to the section
-    section.appendChild(header);
-    section.appendChild(description);
-    section.appendChild(skillsList);
-    section.appendChild(button);
-
-    // Append the section to the container in the DOM
-    container.appendChild(section);
-  });
-}
-
-// Load these files to HTML first
-window.addEventListener('load', createAndAddElements);
-
 // Build function to receive
 function createPopUpMenu(
   titleText,
@@ -224,20 +131,37 @@ function extractDataFromSections() {
 }
 
 // Get Array  of List
-const projDetails = {
+const projDetails = [{
   nameText: 'Keeping track of hundreds  of components website',
   descriptionText: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-  when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
 
   skills: ['HTML', 'Boostrap', 'Ruby on Rails'],
   liveVersion: 'https://rychrr.github.io/',
   linkSource: 'https://github.com/rychrr/portofolio_page',
   featuredImage: './img/works_popup.png',
-};
+},
+
+{
+  nameText: 'Keeping track of hundreds  of components website',
+  descriptionText: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
+
+  skills: ['HTML', 'Boostrap', 'Ruby on Rails'],
+  liveVersion: 'https://rychrr.github.io/',
+  linkSource: 'https://github.com/rychrr/portofolio_page',
+  featuredImage: './img/works_popup.png',
+},
+
+];
 
 const extractedData = extractDataFromSections();
 extractedData.unshift(projDetails);
