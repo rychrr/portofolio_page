@@ -82,7 +82,6 @@ body {
 /* HEADER SECTION OF PAGE */
 .top_header {
   width: 100vw;
-
   /* use responsive measurements */
   display: flex;
   justify-content: space-between;
