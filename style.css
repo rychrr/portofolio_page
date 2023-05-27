@@ -175,11 +175,17 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 20px 15px 20px 15px;
+  padding: 20px 30px 20px 30px;
   background: #FFFFFF;
   border: 1px solid #EBECF0;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   backdrop-filter: blur(1em);
+  border: solid gold;
+}
+
+.pop_menu_img {
+  max-width: 100%;
+  height: auto;
 }
 
 .pop_up_menu > .pop_menu_header {
@@ -249,7 +255,6 @@ body {
   align-items: center ;
 
 }
-
 
 .pop_menu_btn {
   display: flex;
