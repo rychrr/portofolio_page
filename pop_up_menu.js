@@ -90,8 +90,9 @@ function createPopUpMenu(
 }
 
 function extractDataFromSections() {
+  // images to use in building the pop up
   const workLinkArr = [
-    './img/grid_img_1.png',
+    './img/works_popup.png',
     './img/grid_img_2.png',
     './img/grid_img_3.png',
     './img/grid_img_4.png',
@@ -99,9 +100,22 @@ function extractDataFromSections() {
     './img/grid_img_6.png',
   ];
 
-  const sections = document.querySelectorAll('.rec_works_section');
-  const extractedData = [];
+  const proj_details= {
+    nameText :'Keeping track of hundreds  of components website',
+    descriptionText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\
+    when an unknown printer took a galley of type and scrambled it 1960s\
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\
+    when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    skills :['HTML','Boostrap','Ruby on Rails'],
+    liveVersion : 'https://rychrr.github.io/',
+    linkSource : 'https://github.com/rychrr/portofolio_page',
+  }
 
+  let sections = document.querySelectorAll('.rec_works_section');
+  sections = Array.from(sections).slice(1);
+  const extractedData = [];
   sections.forEach((section) => {
     const data = {};
     const name = section.querySelector('.rec_works_header');
@@ -120,6 +134,7 @@ function extractDataFromSections() {
 
     // Push the object into the array
     extractedData.push(data);
+    extractedData.unshift(proj_details);
   });
 
   extractedData.forEach((item, index) => {
