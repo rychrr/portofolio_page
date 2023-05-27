@@ -82,6 +82,7 @@ body {
 /* HEADER SECTION OF PAGE */
 .top_header {
   width: 100vw;
+
   /* use responsive measurements */
   display: flex;
   justify-content: space-between;
@@ -455,7 +456,6 @@ body {
   margin-top: 0;
 }
 
-
 /* ABOUT US SECTION */
 .about_us_main {
   background: #1c1a19;
@@ -714,7 +714,6 @@ button:disabled,
   filter: blur(3px);
   -webkit-filter: blur(3px);
 }
-
 
 /* DESKTOP MEDIA QUERIES */
 
