@@ -92,6 +92,7 @@ function createPopUpMenu(
 function extractDataFromSections() {
   // images to use in building the pop up
   const workLinkArr = [
+    './img/grid_img_1.png',
     './img/grid_img_2.png',
     './img/grid_img_3.png',
     './img/grid_img_4.png',
@@ -99,8 +100,7 @@ function extractDataFromSections() {
     './img/grid_img_6.png',
   ];
 
-  let sections = document.querySelectorAll('.rec_works_section');
-  sections = Array.from(sections).slice(1);
+  const sections = document.querySelectorAll('.rec_works_section');
   const extractedData = [];
   sections.forEach((section) => {
     const data = {};
@@ -180,7 +180,8 @@ const parentTarget = document.getElementById('portfolio');
 const firstChildTarget = document.querySelector('.rec_works_section_main');
 
 let isPopupOpen = false;
-workSection1.addEventListener('click', () => {
+
+firstChildTarget.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
@@ -188,14 +189,15 @@ workSection1.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
-      workSection1.scrollIntoView({ behavior: 'smooth' });
+      firstChildTarget.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
   }
 });
 
-workSection2.addEventListener('click', () => {
+
+workSection1.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[1], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
@@ -210,7 +212,7 @@ workSection2.addEventListener('click', () => {
   }
 });
 
-workSection3.addEventListener('click', () => {
+workSection2.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[2], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
@@ -225,7 +227,7 @@ workSection3.addEventListener('click', () => {
   }
 });
 
-workSection4.addEventListener('click', () => {
+workSection3.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[3], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
@@ -240,7 +242,7 @@ workSection4.addEventListener('click', () => {
   }
 });
 
-workSection5.addEventListener('click', () => {
+workSection4.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[4], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
@@ -255,9 +257,24 @@ workSection5.addEventListener('click', () => {
   }
 });
 
-workSection6.addEventListener('click', () => {
+workSection5.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[5], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      workSection1.scrollIntoView({ behavior: 'smooth' });
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
+});
+
+workSection6.addEventListener('click', () => {
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[6], firstChildTarget.nextElementSibling);
     const menuPopUp = document.querySelector('.pop_up_menu');
     menuPopUp.scrollIntoView({ behavior: 'smooth' });
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
