@@ -100,18 +100,18 @@ function extractDataFromSections() {
     './img/grid_img_6.png',
   ];
 
-  const proj_details= {
-    nameText :'Keeping track of hundreds  of components website',
-    descriptionText:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\
-    when an unknown printer took a galley of type and scrambled it 1960s\
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.\
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,\
-    when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    skills :['HTML','Boostrap','Ruby on Rails'],
-    liveVersion : 'https://rychrr.github.io/',
-    linkSource : 'https://github.com/rychrr/portofolio_page',
-  }
+  const projDetails = {
+    nameText: 'Keeping track of hundreds  of components website',
+    descriptionText: `/* Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita. */`,
+    skills: ['HTML', 'Boostrap', 'Ruby on Rails'],
+    liveVersion: 'https://rychrr.github.io/',
+    linkSource: 'https://github.com/rychrr/portofolio_page',
+  };
 
   let sections = document.querySelectorAll('.rec_works_section');
   sections = Array.from(sections).slice(1);
@@ -134,7 +134,7 @@ function extractDataFromSections() {
 
     // Push the object into the array
     extractedData.push(data);
-    extractedData.unshift(proj_details);
+    extractedData.unshift(projDetails);
   });
 
   extractedData.forEach((item, index) => {
