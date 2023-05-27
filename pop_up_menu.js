@@ -147,6 +147,35 @@ extractedData.forEach((item) => {
   popUpMenus.push(popUpMenu);
 });
 
+// Function to add blur effect
+// function addBlur() {
+//   const body = document;
+//   body.style.backdropFilter = 'blur(5px)';
+//   body.style.overflow = 'hidden';
+//   body.style.width = '100%';
+//   body.style.height = '100%';
+//   body.po
+
+// }
+
+// // Function to remove blur effect
+// function removeBlur() {
+//   const body = document;
+//   body.style.backdropFilter = 'none';
+// }
+
+function removePopup(popupElement) {
+  if (popupElement) {
+    popupElement.remove();
+  }
+}
+
+// function checkPopup(popupElement) {
+//   if (popupElement) {
+//     popupElement.remove();
+//   }
+// }
+
 // Intereact with DOM and Apply event listeners on the work section
 const workSection1 = document.querySelector('.rec_works_section.proj_1');
 const workSection2 = document.querySelector('.rec_works_section.proj_2');
@@ -157,56 +186,87 @@ const workSection6 = document.querySelector('.rec_works_section.proj_6');
 const parentTarget = document.getElementById('portfolio');
 const firstChildTarget = document.querySelector('.rec_works_section_main');
 
+let isPopupOpen = false;
 workSection1.addEventListener('click', () => {
-  parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
-  const closePopUp = document.querySelector('.pop_menu_cls_icon');
-  const menuPopUp = document.querySelector('.pop_up_menu');
-  closePopUp.addEventListener('click', () => {
-    menuPopUp.style.display = 'none';
-  });
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
 });
 
 workSection2.addEventListener('click', () => {
-  parentTarget.insertBefore(popUpMenus[1], firstChildTarget.nextElementSibling);
-  const closePopUp = document.querySelector('.pop_menu_cls_icon');
-  const menuPopUp = document.querySelector('.pop_up_menu');
-  closePopUp.addEventListener('click', () => {
-    menuPopUp.style.display = 'none';
-  });
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
 });
 
 workSection3.addEventListener('click', () => {
-  parentTarget.insertBefore(popUpMenus[2], firstChildTarget.nextElementSibling);
-  const closePopUp = document.querySelector('.pop_menu_cls_icon');
-  const menuPopUp = document.querySelector('.pop_up_menu');
-  closePopUp.addEventListener('click', () => {
-    menuPopUp.style.display = 'none';
-  });
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
 });
 
 workSection4.addEventListener('click', () => {
-  parentTarget.insertBefore(popUpMenus[3], firstChildTarget.nextElementSibling);
-  const closePopUp = document.querySelector('.pop_menu_cls_icon');
-  const menuPopUp = document.querySelector('.pop_up_menu');
-  closePopUp.addEventListener('click', () => {
-    menuPopUp.style.display = 'none';
-  });
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
 });
 
 workSection5.addEventListener('click', () => {
-  parentTarget.insertBefore(popUpMenus[4], firstChildTarget.nextElementSibling);
-  const closePopUp = document.querySelector('.pop_menu_cls_icon');
-  const menuPopUp = document.querySelector('.pop_up_menu');
-  closePopUp.addEventListener('click', () => {
-    menuPopUp.style.display = 'none';
-  });
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
 });
 
 workSection6.addEventListener('click', () => {
-  parentTarget.insertBefore(popUpMenus[5], firstChildTarget.nextElementSibling);
-  const closePopUp = document.querySelector('.pop_menu_cls_icon');
-  const menuPopUp = document.querySelector('.pop_up_menu');
-  closePopUp.addEventListener('click', () => {
-    menuPopUp.style.display = 'none';
-  });
+  if (!isPopupOpen) {
+    parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+    const menuPopUp = document.querySelector('.pop_up_menu');
+    menuPopUp.scrollIntoView({ behavior: 'smooth' });
+    const closePopUp = document.querySelector('.pop_menu_cls_icon');
+    closePopUp.addEventListener('click', () => {
+      removePopup(menuPopUp);
+      isPopupOpen = false; // Update the state of the pop-up menu
+    });
+    isPopupOpen = true; // Update the state of the pop-up menu
+  }
 });

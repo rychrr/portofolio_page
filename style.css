@@ -15,6 +15,8 @@ body {
   margin: 0;
 }
 
+
+
 .mobile_menu_main {
   display: flex;
   flex-direction: column;
@@ -173,19 +175,13 @@ body {
 /* Work Pop up Menu */
 .pop_up_menu {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 15px 20px 15px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   background: #FFFFFF;
   border: 1px solid #EBECF0;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  border: solid gold;
-  backdrop-filter: blur(10px);
-  position: static;
-  top:0%;
-
 }
 
 .pop_menu_img {
@@ -686,7 +682,7 @@ footer {
 @media only screen and (min-width: 768px) {
 
   .pop_up_menu {
-    width: 100%;
+  max-width: 85vw;
   }
 
  /* Mobile pop up */
@@ -706,17 +702,16 @@ footer {
  }
 
  .pop_menu_img  {
-  padding-right: 20px;
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
-  width: 50%;
-
+  
  }
 
  .pop_menu_content_1  {
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
  }
 
  .pop_menu_descr {
@@ -731,8 +726,8 @@ footer {
  }
  
  .pop_menu_buttons {
-  width: 50%;
-  justify-content: flex-end;
+  max-width: 100%;
+  justify-content: flex-start;
 
  }
 
@@ -1113,23 +1108,23 @@ footer {
 }
 
 /* Button Interctions */
-button:enabled {
+button:enabled, .pop_menu_btn:enabled {
   background: #f55800;
   color: #fff;
 }
 
-button:hover {
+button:hover,.pop_menu_btn:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
 }
 
-button:active {
+button:active ,  .pop_menu_btn:active{
   background: #e05304;
   color: #f4f1f0;
 }
 
-button:disabled {
+button:disabled, .pop_menu_btn:disabled {
   color: #5b5957;
   background: #f4f1f0;
 }
