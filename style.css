@@ -865,6 +865,7 @@ footer {
     justify-content: baseline;
     align-items: baseline;
     margin: 0;
+    padding: 0;
   }
 
   .work_sec_headers > h2 {
