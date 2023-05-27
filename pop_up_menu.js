@@ -196,7 +196,6 @@ firstChildTarget.addEventListener('click', () => {
   }
 });
 
-
 workSection1.addEventListener('click', () => {
   if (!isPopupOpen) {
     parentTarget.insertBefore(popUpMenus[1], firstChildTarget.nextElementSibling);
