@@ -21,6 +21,7 @@ function createPopUpMenu(
   const closeIcon = document.createElement('img');
   closeIcon.classList.add('pop_menu_cls_icon');
   closeIcon.alt = 'cancel or close icon';
+  closeIcon.setAttribute('src', './img/cancel_Icon.png');
   headerDiv.appendChild(closeIcon);
 
   section.appendChild(headerDiv);
@@ -60,9 +61,10 @@ function createPopUpMenu(
   button1.classList.add('pop_menu_btn');
   button1.setAttribute('href', liveVersion);
   const span1 = document.createElement('span');
-
+  span1.textContent = 'Seee Live';
   const img1 = document.createElement('img');
   img1.alt = 'See Live';
+  img1.src = './img/see_live_icon.png';
   button1.appendChild(span1);
   button1.appendChild(img1);
   buttonsDiv.appendChild(button1);
@@ -71,8 +73,11 @@ function createPopUpMenu(
   button2.classList.add('pop_menu_btn');
   button2.setAttribute('href', linkSource);
   const span2 = document.createElement('span');
+  span2.textContent = 'See source';
+
   const img2 = document.createElement('img');
   img2.alt = 'github logo';
+  img2.src = './img/social_media_logo/github.png';
   button2.appendChild(span2);
   button2.appendChild(img2);
   buttonsDiv.appendChild(button2);
@@ -142,7 +147,7 @@ extractedData.forEach((item) => {
   popUpMenus.push(popUpMenu);
 });
 
-// Select the section element
+// Intereact with DOM and Apply event listeners on the work section
 const workSection1 = document.querySelector('.rec_works_section.proj_1');
 const workSection2 = document.querySelector('.rec_works_section.proj_2');
 const workSection3 = document.querySelector('.rec_works_section.proj_3');
@@ -151,34 +156,58 @@ const workSection5 = document.querySelector('.rec_works_section.proj_5');
 const workSection6 = document.querySelector('.rec_works_section.proj_6');
 const parentTarget = document.getElementById('portfolio');
 const firstChildTarget = document.querySelector('.rec_works_section_main');
-const closePopUp = document.querySelector('.pop_menu_cls_icon');
-const menuPopUp = document.querySelector('.pop_up_menu');
 
-closePopUp.addEventListener('click', () => {
-  menuPopUp.style.display = 'none';
-});
 
 workSection1.addEventListener('click', () => {
-// Insert the popUpMenus[0] section after the reference section
   parentTarget.insertBefore(popUpMenus[0], firstChildTarget.nextElementSibling);
+  const closePopUp = document.querySelector('.pop_menu_cls_icon');
+  const menuPopUp = document.querySelector('.pop_up_menu');
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
 });
 
 workSection2.addEventListener('click', () => {
   parentTarget.insertBefore(popUpMenus[1], firstChildTarget.nextElementSibling);
+  const closePopUp = document.querySelector('.pop_menu_cls_icon');
+  const menuPopUp = document.querySelector('.pop_up_menu');
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
 });
 
 workSection3.addEventListener('click', () => {
   parentTarget.insertBefore(popUpMenus[2], firstChildTarget.nextElementSibling);
+  const closePopUp = document.querySelector('.pop_menu_cls_icon');
+  const menuPopUp = document.querySelector('.pop_up_menu');
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
 });
 
 workSection4.addEventListener('click', () => {
   parentTarget.insertBefore(popUpMenus[3], firstChildTarget.nextElementSibling);
+  const closePopUp = document.querySelector('.pop_menu_cls_icon');
+  const menuPopUp = document.querySelector('.pop_up_menu');
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
 });
 
 workSection5.addEventListener('click', () => {
   parentTarget.insertBefore(popUpMenus[4], firstChildTarget.nextElementSibling);
+  const closePopUp = document.querySelector('.pop_menu_cls_icon');
+  const menuPopUp = document.querySelector('.pop_up_menu');
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
 });
 
 workSection6.addEventListener('click', () => {
   parentTarget.insertBefore(popUpMenus[5], firstChildTarget.nextElementSibling);
+  const closePopUp = document.querySelector('.pop_menu_cls_icon');
+  const menuPopUp = document.querySelector('.pop_up_menu');
+  closePopUp.addEventListener('click', () => {
+    menuPopUp.style.display = 'none';
+  });
 });
