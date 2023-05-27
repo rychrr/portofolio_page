@@ -464,20 +464,6 @@ body {
   padding: 50px 24px 50px 24px;
 }
 
-/* Style for invalid input */
-input:invalid {
-  border-color: red;
-}
-
-
-/* Style for error message */
-.error_message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-
 label {
   margin-bottom: 30px;
 }
@@ -513,6 +499,18 @@ textarea::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+}
+
+/* Style for invalid input */
+input:invalid {
+  border-color: red;
+}
+
+/* Style for error message */
+.error_message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .submit_btn {
