@@ -170,14 +170,14 @@ function removePopup(popupElement) {
 }
 
 // Intereact with DOM and Apply event listeners on the work section
-const workSection1 = document.querySelector('.rec_works_section.proj_1');
-const workSection2 = document.querySelector('.rec_works_section.proj_2');
-const workSection3 = document.querySelector('.rec_works_section.proj_3');
-const workSection4 = document.querySelector('.rec_works_section.proj_4');
-const workSection5 = document.querySelector('.rec_works_section.proj_5');
-const workSection6 = document.querySelector('.rec_works_section.proj_6');
+const workSection1 = document.querySelector('.rec_proj_btn.proj_1');
+const workSection2 = document.querySelector('.rec_proj_btn.proj_2');
+const workSection3 = document.querySelector('.rec_proj_btn.proj_3');
+const workSection4 = document.querySelector('.rec_proj_btn.proj_4');
+const workSection5 = document.querySelector('.rec_proj_btn.proj_5');
+const workSection6 = document.querySelector('.rec_proj_btn.proj_6');
 const parentTarget = document.getElementById('portfolio');
-const firstChildTarget = document.querySelector('.rec_works_section_main');
+const firstChildTarget = document.querySelector('.rec_proj_btn.main');
 
 let isPopupOpen = false;
 
