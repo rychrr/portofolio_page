@@ -860,7 +860,6 @@ footer {
   /* Work sections desktop verion */
   .work_sec_headers {
     display: flex;
-    padding: 15vh 10vw 15vh 10vw;
     width: 85vw;
     justify-content: baseline;
     align-items: baseline;
@@ -882,8 +881,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   .backgrnd_img_main {
@@ -901,7 +900,6 @@ footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0;
     padding-left: 10px;
   }
 
