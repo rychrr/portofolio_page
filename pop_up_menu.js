@@ -147,23 +147,6 @@ extractedData.forEach((item) => {
   popUpMenus.push(popUpMenu);
 });
 
-// Function to add blur effect
-// function addBlur() {
-//   const body = document;
-//   body.style.backdropFilter = 'blur(5px)';
-//   body.style.overflow = 'hidden';
-//   body.style.width = '100%';
-//   body.style.height = '100%';
-//   body.po
-
-// }
-
-// // Function to remove blur effect
-// function removeBlur() {
-//   const body = document;
-//   body.style.backdropFilter = 'none';
-// }
-
 function removePopup(popupElement) {
   if (popupElement) {
     popupElement.remove();
