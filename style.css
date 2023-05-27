@@ -82,6 +82,7 @@ body {
 /* HEADER SECTION OF PAGE */
 .top_header {
   width: 100vw;
+
   /* use responsive measurements */
   display: flex;
   justify-content: space-between;
@@ -179,10 +180,12 @@ body {
   background-color: white;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   position: fixed;
-  top:40%;
+  max-height: 100%;
+  top: 40%;
   left: 40%;
   transform: translate(-40%, -40%);
   z-index: 9999;
+  overflow: auto;
 }
 
 .pop_menu_img {
@@ -453,6 +456,7 @@ body {
   margin-top: 0;
 }
 
+
 /* ABOUT US SECTION */
 .about_us_main {
   background: #1c1a19;
@@ -676,7 +680,45 @@ footer {
   border-radius: 21px;
 }
 
+/* Button Interctions */
+button:enabled,
+.pop_menu_btn:enabled {
+  background: #f55800;
+  color: #fff;
+}
+
+button:hover,
+.pop_menu_btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+button:active,
+.pop_menu_btn:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+button:disabled,
+.pop_menu_btn:disabled {
+  color: #5b5957;
+  background: #f4f1f0;
+}
+
+/* adjusted based on JS interactions; */
+.hide {
+  display: none;
+}
+
+.blur {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+
 /* DESKTOP MEDIA QUERIES */
+
 @media only screen and (min-width: 768px) {
   .pop_up_menu {
     max-width: 85vw;
@@ -924,7 +966,7 @@ footer {
   }
 
   .rec_proj_btn.main {
-   width: auto;
+    width: auto;
   }
 
   /* Flex set  */
@@ -960,6 +1002,22 @@ footer {
     display: none;
   }
 
+  .rec_works_section > p {
+    width: auto;
+    font-size: 17px;
+    line-height: 24px;
+    padding-bottom: 5px;
+  }
+
+  .about_us > p {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
   .rec_works_section:hover .rec_proj_btn {
     display: block;
     width: 100%;
@@ -972,13 +1030,14 @@ footer {
   .rec_works_section:hover p {
     display: none;
   }
+
   .rec_works_section:hover h2 {
     display: none;
   }
+
   .rec_works_section:hover ul {
     display: none;
   }
-
 
   .rec_works_section.proj_6 {
     background-image: url(./img/grid_img_6.png);
@@ -1016,13 +1075,6 @@ footer {
     background-size: cover;
   }
 
-  .rec_works_section > p {
-    width: auto;
-    font-size: 17px;
-    line-height: 24px;
-    padding-bottom: 5px;
-  }
-
   .rec_skills_list {
     width: auto;
     display: flex;
@@ -1041,15 +1093,6 @@ footer {
   .about_us {
     width: 50%;
     background-image: none;
-  }
-
-  .about_us > p {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    color: #f4f5f7;
   }
 
   .about_us > p:nth-child(3) {
@@ -1094,39 +1137,4 @@ footer {
   }
 }
 
-/* Button Interctions */
-button:enabled,
-.pop_menu_btn:enabled {
-  background: #f55800;
-  color: #fff;
-}
-
-button:hover,
-.pop_menu_btn:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
-button:active,
-.pop_menu_btn:active {
-  background: #e05304;
-  color: #f4f1f0;
-}
-
-button:disabled,
-.pop_menu_btn:disabled {
-  color: #5b5957;
-  background: #f4f1f0;
-}
-
-/* adjusted based on JS interactions; */
-.hide{
-  display: none;
-}
-
-.blur
- {
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-}
+/* End of Desktop Media Queries  */
