@@ -204,7 +204,7 @@ workSection2.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
-      workSection2.scrollIntoView({ behavior: 'smooth' });
+      workSection1.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -219,7 +219,7 @@ workSection3.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
-      workSection3.scrollIntoView({ behavior: 'smooth' });
+      workSection1.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -234,7 +234,7 @@ workSection4.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
-      workSection4.scrollIntoView({ behavior: 'smooth' });
+      workSection1.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -249,7 +249,7 @@ workSection5.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
-      workSection5.scrollIntoView({ behavior: 'smooth' });
+      workSection1.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
@@ -264,7 +264,7 @@ workSection6.addEventListener('click', () => {
     const closePopUp = document.querySelector('.pop_menu_cls_icon');
     closePopUp.addEventListener('click', () => {
       removePopup(menuPopUp);
-      workSection6.scrollIntoView({ behavior: 'smooth' });
+      workSection1.scrollIntoView({ behavior: 'smooth' });
       isPopupOpen = false; // Update the state of the pop-up menu
     });
     isPopupOpen = true; // Update the state of the pop-up menu
