@@ -469,6 +469,7 @@ input:invalid {
   border-color: red;
 }
 
+
 /* Style for error message */
 .error_message {
   color: red;
