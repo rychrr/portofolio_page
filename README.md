@@ -128,8 +128,10 @@ You can deploy this project by:
 ## 🔭 Future Features <a name="future-features"></a>
 - [x] Html pageframework
 - [x] CSS styling using  mobile first
-- [ ] **Interactions:** Improving interactions with Javascript
-- [ ] **Page Designs:** More intuitive Designs and themes for Users
+- [x] **Interactions:** Improving interactions with Javascript
+- [x] **Page Designs:** More intuitive Designs and themes for Users
+- [x] **Page Designs:** Pop up Windows
+- []  **Page Designs:**  Form Validations
 - [ ] **Auto Response:** Auto response to interactions for livechat, direct messaging
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +159,7 @@ If you like this project , please show your support by;
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank :
-- [Bobson](https://github.com/KALUNGI-J-BOBSON)
+- [Norbi](https://github.com/norbiboy1)
 
 for their support and guidiance during the project building.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
